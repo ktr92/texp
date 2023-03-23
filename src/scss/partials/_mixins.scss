@@ -1,0 +1,22 @@
+@import 'params.scss';
+
+@mixin container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+
+@mixin clear {
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
+

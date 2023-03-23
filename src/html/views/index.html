@@ -1,0 +1,723 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="mainbanner">
+    <div class="mainbanner__content">
+      <div class="mainbanner__items">
+        <div class="mainbanner__title">
+          <h1>Российский поставщик <br>
+            IT-оборудования</h1>
+        </div>
+        <div class="mainbanner__text"> системы связи, офисная техника и расходные материалы от отечественных и <br> мировых производителей</div>
+        <div class="mainbanner__button">
+          <a href="#modal_callback" data-toggle="modal" class="btn">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+    <div class="mainbanner__bg">
+      <div id="video-bg">
+        <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/intro.mp4" type="video/mp4">
+        </video>
+        <!-- <video class="video-bg_mobile" width="100%" height="auto" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/img/bgvideo_mobile.mp4" type="video/mp4">
+        </video> -->
+      </div>
+    </div>
+  </div>
+
+  <section id="block1" class="about">
+    <div class="container">
+        <div class="about__wrapper">
+          <div class="about__left">
+            <div class="about__title"> <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s"> <span class="color">Динамично развивающийся </span> IT-интегратор - поставщик решений, оборудования и услуг в области IT. </h2>
+            </div>
+            <div class="about__text">
+              <p>Ключевые компетенции компании ООО “Галактика” находятся в сферах телекоммуникаций, печати и расходных материалов, мультимедиа, программного обеспечения для предприятий самых разных масштабов и отраслей.
+             </p>
+              <p>Благодаря большому опыту в реализации проектов разной сложности и объемов, предлагаемые и внедряемые нами решения целиком адаптированы под потребности бизнеса и государственного заказчика.
+              </p>
+              <p>Прекрасно ориентируясь на современной рынке и отслеживая развитие новых тенденций и технологий, наша компания осуществляет продвижение и внедрение передовых разработок и технологий от ведущих отечественных и мировых производителей, и тем самым, решает конкретные задачи - повышение эффективности, производительности, надежности и снижение затрат.</p>
+            </div>
+          </div>
+          <div class="about__right">
+            <div class="about__image">
+              <div class="about__img"><img src="img/img1.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="block2" class="partners">
+    <div class="container">
+      <div class="partners__wrapper">
+        <div class="partners__title">
+          <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Наши клиенты</h2>
+        </div>
+        <div class="partners__items">
+          <div class="partners__item">
+            <div class="partners__img"><img src="img/1.png" alt=""></div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__img"><img src="img/2.png" alt=""></div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__img"><img src="img/3.png" alt=""></div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__img"><img src="img/4.png" alt=""></div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__img"><img src="img/5.png" alt=""></div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="block3" class="products">
+    <div class="container">
+      <div class="products__wrapper">
+        <div class="products__title">
+          <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Оборудование</h2>
+        </div>
+        <div class="products__text">
+          <p>Поставка оборудования - это одно из направлений деятельности нашей
+            компании. <br>
+            Мы предлагаем и подбираем правильные и оптимальные решения для
+            Вашего бизнеса благодаря широкому охвату отечественных и зарубежных
+            брендов и предлагаемых решений, а также выполняем поставку в
+            максимально короткие сроки.</p>
+            
+            <p> Наша компания сотрудничает с ведущими зарубежными и российскими
+            компаниями, поставщиками оборудования и программного обеспечения. Также наша компания помогает внедрять отечественные инновационные
+            разработки и решения, выстраивать инфраструктуру, которая не зависит от
+            колебаний рынка и политической составляющей.</p>
+        </div>
+
+        <div class="products__items">
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card1.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">Компьютеры</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card2.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">НОУТБУКИ</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_2" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card3.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">СЕРВЕРЫ</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card4.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">СХД</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card5.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">КОММУНИКАЦИИ</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card6.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">МУЛЬТИМЕДИА</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="products__item">
+            <div class="card">
+              <div class="card__wrapper">
+                <div class="card__image">
+                  <div class="card__img"><img src="img/card7.png" alt=""></div>
+                </div>
+                <div class="card__info">
+                  <div class="card__title">ОРГТЕХНИКА</div>
+                  <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам этикеток, фотолаборатории</div>
+                </div>
+              </div>
+              <a href="#modal_product_1" data-toggle="modal" class="card__link">
+                <div class="card__linkcontent">
+                  <div class="card__linktext">
+                    <div class="card__linkdots">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z" fill="#7964FF"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="card__linkcaption">Подробнее</div>
+                  </div>
+                  <div class="card__linkarrow">
+                    <div class="card__linkimg">
+                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_3019)">
+                        <path d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z" fill="#7964FF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_3019">
+                        <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="block4" class="pageform">
+    <div class="pageform__wrapper">
+     
+      <div class="pageform__subwrapper">
+        <div class="container">
+         
+          <div class="pageform__content">
+            <div class="pageform__image">
+              <div class="pageform__img"><img src="img/bg3.png" alt=""></div>
+            </div>
+            <div class="pageform__form">
+              <form action="">
+                <div class="pageform__title">Оставьте заявку на бесплатную консультацию</div>
+                <div class="pageform__row">
+                  
+                    <div class="pageform__input"><input type="text" placeholder="Ваше имя"></div>
+                    <div class="pageform__input"><input class="input-error" value="123" type="tel" placeholder="Телефон"></div>
+                    <div class="pageform__input"><input type="text" placeholder="Название компании"></div>
+                    <div class="pageform__input pageform__input_btn"><button class="btn">Отправить</button></div>
+                </div>
+                <div class="pageform__check">
+                  <div class="check">
+                    <input type="checkbox" id="agree" checked="checked" value="Y">
+                    <label for="agree">Я согласен с&nbsp;<a href="#modal_privacy" data-toggle="modal"> условиями обработки </a>&nbsp;моих персональных данных
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="block5" class="service">
+    <div class="container">
+      <div class="service__title">
+        <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Сервис</h2>
+      </div>
+      <div class="service__items">
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard1.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка печатной техники</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard2.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка АРМ-ов, серверов и СХД </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard3.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка IP-телефонии</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard4.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка средств СКЗИ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard5.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка систем видеоконференц связи</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__item">
+          <div class="servicecard">
+            <div class="servicecard__wrapper">
+              <div class="servicecard__image">
+                <div class="servicecard__img"><img src="img/servicecard6.png" alt=""></div>
+              </div>
+              <div class="servicecard__title">
+                <div class="servicecard__name">пуско-наладка мультимедиа: видео, аудио, свет</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="block7" class="itblock">
+    <div class="container">
+      <div class="itblock__wrapper">
+        <div class="itblock__left">
+          <div class="itblock__image">
+            <div class="itblock__img onlyDesktop"><img src="img/img3.png" alt=""></div>
+            <div class="itblock__img onlyMobile"><img src="img/img3_mb.png" alt=""></div>
+          </div>
+        </div>
+        <div class="itblock__right">
+          <div class="itblock__content">
+            <div class="itblock__badge">IT - интеграция</div>
+            <div class="itblock__title">Что делать, если IT-отдел <br>  <span class="throught">не справляется</span>
+               с настройкой <br>  разнородного софта и оборудования?</div>
+            <div class="itblock__text">
+              <p>
+                Если сотрудники одного отдела с трудом понимают, чем занимается другой, из-за принципиально разного ПО? Если компьютерные сети разных отделов требуют дублирования большого числа узлов?</p>
+
+                <p>Есть способ, позволяющий быстро решить все эти проблемы. Интеграция систем поможет вам навести порядок в компьютерной инфраструктуре, привести рабочий процесс к общей основе и сократить нагрузку на IT-отделы, а также снизить расходы на обслуживание и обновление парка техники.
+              </p>
+            </div>
+            <div class="itblock__button"><a href="#modal_text" data-toggle="modal" class="btn">Читать подробнее</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="block10" class="accblock">
+    <div class="container">
+      <div class="accblock__wrapper">
+        <div class="accblock__figure">
+          <img src="img/bg7.svg" alt="">
+        </div>
+        <div class="accblock__left">
+          <div class="accnblockk__content">
+            <div class="itblock__badge">Заказчикам</div>
+            <div class="accblock__title">
+              постоянное IT обеспечение вашей деятельности 
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__item">
+                  <div class="accordion__title">
+                    <div class="accordion__arrow">
+                      <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
+                    </div> 
+                    <span class="accordion__title-text">Задачи любого масштаба</span>
+                  </div>
+                  <div class="accordion__content">
+                    Мы собрали команду профессионалов, имеющих большой опыт совместной работы.
+                  </div>
+              </div>
+                <div class="accordion__item">
+                  <div class="accordion__title">
+                    <div class="accordion__arrow">
+                      <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
+                    </div> 
+                    <span class="accordion__title-text">Выстроенность процессов и слаженность действий</span>
+                  </div>
+                  <div class="accordion__content">
+                    Здесь контент
+                  </div>
+              </div>
+                <div class="accordion__item">
+                  <div class="accordion__title">
+                    <div class="accordion__arrow">
+                      <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
+                    </div> 
+                    <span class="accordion__title-text">Соблюдение сроков выполнения работ и оказания услуг</span>
+                  </div>
+                  <div class="accordion__content">
+                    Здесь контент
+                  </div>
+              </div>
+                <div class="accordion__item">
+                  <div class="accordion__title">
+                    <div class="accordion__arrow">
+                      <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
+                    </div> 
+                    <span class="accordion__title-text">Обеспечение импортозамещения</span>
+                  </div>
+                  <div class="accordion__content">
+                    Здесь контент
+                  </div>
+              </div>
+                <div class="accordion__item">
+                  <div class="accordion__title">
+                    <div class="accordion__arrow">
+                      <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
+                    </div> 
+                    <span class="accordion__title-text">Сопровождение IT проектов</span>
+                  </div>
+                  <div class="accordion__content">
+                    Здесь контент
+                  </div>
+              </div>
+        </div>
+
+          </div>
+        </div>
+        <div class="accblock__right">
+          <div class="accblock__image">
+            <div class="accblock__img"><img src="img/img4.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="block8" class="imgblock">
+    <div class="container">
+      <div class="accblock__wrapper">
+        <div class="accblock__figure">
+          <img src="img/bg8.svg" alt="">
+        </div>
+        <div class="accblock__left">
+          <div class="accblock__image">
+            <div class="accblock__img"><img src="img/img5.png" alt=""></div>
+          </div>
+
+          
+        </div>
+        <div class="accblock__right">
+          <div class="accnblockk__content">
+            <div class="itblock__badge">Партнерам</div>
+            <div class="accblock__title">
+              Наша компания стремится к долгосрочному развитию и оказанию помощи в упрощении ваших задач путем автоматизации закупок ИТ-оборудования
+            </div>
+
+            <div class="imgblock__text">
+              <p>Мы будем рады предложить и выбрать именно то, что вам нужно для вас в соответствии с вашими потребностями.</p>
+
+                <p>Индивидуальный подход и прозрачные условия труда - приоритетная составляющая нашего бизнеса. Мы работаем по контракту и всегда готовы предоставить необходимые документы для его заключения, чтобы вы могли быть уверены в нашей надежности.</p>
+                
+                <p> Благодаря правильной работе наших специалистов в отделе закупок и нашим прочным связям с крупными поставщиками мы готовы предложить вам лучшие цены на рынке ИТ-оборудования.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="block9" class="contacts">
+    <div class="container">
+      <div class="contacts__wrapper">
+
+       
+
+        <div class="contacts__main">
+          <div class="contacts__icon">
+            <img src="img/icon.svg" alt="" class="onlyDesktop">
+            <img src="img/icon_mb.svg" alt="" class="onlyMobile">
+          </div>
+  
+          <div class="contacts__content">
+            <div class="contacts__phone"><a href="tel:+8 (495) 120-60-14">+8 (495) 120-60-14</a></div>
+            <div class="contacts__text">129085, город Москва, ул. Большая Марьинская, дом 9, стр.1, офис 112</div>
+            <div class="contacts__text">
+              <a href="mailto:info@ooogalaxy.ru">info@ooogalaxy.ru</a>
+            </div>
+            <div class="contacts__socials">
+              <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.7884 19.0674C23.815 17.3157 21.3077 15.2108 20.2725 14.2948C19.9892 14.044 19.9589 13.6101 20.2167 13.3328C22.1922 11.21 23.7722 8.77087 24.3161 7.297C24.556 6.64592 24.0593 5.958 23.3595 5.958H21.3266C20.6566 5.958 20.2644 6.1985 20.0775 6.58146C18.4357 9.94575 17.0274 11.4018 16.0416 12.2527C15.4896 12.7294 14.6289 12.3345 14.6289 11.6092C14.6289 10.2117 14.6289 8.40525 14.6289 7.12421C14.6289 6.50292 14.1208 6.00025 13.4941 6.00025L9.78045 5.958C9.313 5.958 9.04596 6.48721 9.32654 6.85825L9.9397 7.73846C10.1705 8.04342 10.295 8.41446 10.295 8.79525L10.2918 12.7592C10.2918 13.4487 9.456 13.7856 8.95983 13.3025C7.28121 11.6677 5.82466 8.32942 5.30033 6.73312C5.14866 6.27108 4.71587 5.95908 4.22512 5.958L2.22258 5.95312C1.47129 5.95312 0.922039 6.66542 1.12625 7.38258C2.956 13.8051 6.71029 19.9151 13.401 20.5776C14.0602 20.6426 14.6289 20.1117 14.6289 19.4547V17.3715C14.6289 16.774 15.0975 16.2605 15.6998 16.2453C15.7209 16.2448 15.742 16.2448 15.7632 16.2448C17.5328 16.2448 19.5147 18.8204 20.2081 20.0251C20.4074 20.3718 20.7801 20.583 21.1831 20.583H23.8768C24.6627 20.583 25.167 19.7494 24.7884 19.0674Z" fill="#7964FF"/>
+                </svg>
+                </a></div>
+              <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3002 2.88257C19.9702 2.60273 19.4519 2.56269 18.916 2.77785H18.9151C18.3515 3.00401 2.96026 9.60577 2.3337 9.87549C2.21974 9.91509 1.22446 10.2865 1.32698 11.1137C1.4185 11.8595 2.21842 12.1683 2.3161 12.204L6.22902 13.5438C6.48862 14.4079 7.44562 17.5962 7.65726 18.2773C7.78926 18.7019 8.00442 19.2598 8.3815 19.3747C8.71238 19.5023 9.0415 19.3857 9.25446 19.2185L11.6467 16.9995L15.5086 20.0113L15.6006 20.0663C15.8628 20.1825 16.1141 20.2406 16.3539 20.2406C16.5391 20.2406 16.7169 20.2058 16.8867 20.1363C17.4653 19.8987 17.6967 19.3474 17.7209 19.2849L20.6056 4.29101C20.7816 3.49021 20.5369 3.08277 20.3002 2.88257ZM9.67994 14.0797L8.35994 17.5997L7.03994 13.1997L17.1599 5.71969L9.67994 14.0797Z" fill="#7964FF"/>
+                </svg>
+                </a></div>
+              <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0128 2.16699C7.04794 2.16699 2.19219 7.01856 2.19002 12.9834C2.18894 14.8901 2.68834 16.7514 3.63517 18.3916L2.16675 23.8337L7.83521 22.4943C9.41579 23.3566 11.1951 23.8093 13.0064 23.8104H13.0107C18.9744 23.8104 23.828 18.9577 23.8313 12.994C23.8335 10.1026 22.7091 7.38404 20.6659 5.3387C18.6228 3.29445 15.9074 2.16808 13.0128 2.16699ZM13.0107 4.33366C15.3247 4.33474 17.4993 5.23694 19.134 6.8706C20.7688 8.50644 21.6668 10.68 21.6646 12.9919C21.6625 17.7629 17.7817 21.6437 13.0085 21.6437C11.5645 21.6426 10.134 21.28 8.8741 20.5921L8.14412 20.1943L7.33797 20.3848L5.20516 20.8883L5.72567 18.9544L5.96053 18.0869L5.51196 17.3083C4.7558 15.9996 4.35561 14.5033 4.35669 12.9834C4.35886 8.21456 8.24074 4.33366 13.0107 4.33366ZM9.18302 7.98991C9.00211 7.98991 8.70959 8.05762 8.46151 8.32845C8.21342 8.5982 7.51359 9.25153 7.51359 10.5819C7.51359 11.9122 8.48267 13.1982 8.61808 13.3791C8.75242 13.5589 10.4886 16.3752 13.2371 17.4585C15.5207 18.3587 15.9845 18.1811 16.4807 18.1356C16.9769 18.0912 18.0814 17.4828 18.3067 16.8512C18.5321 16.2197 18.5326 15.6764 18.4654 15.5648C18.3982 15.4521 18.2179 15.3849 17.947 15.2495C17.6773 15.1141 16.3479 14.4613 16.0999 14.3714C15.8518 14.2815 15.6703 14.236 15.4905 14.5068C15.3106 14.7777 14.7938 15.3849 14.6357 15.5648C14.4775 15.7457 14.3204 15.77 14.0496 15.6346C13.7787 15.4981 12.9079 15.2118 11.8744 14.291C11.0706 13.5749 10.5282 12.6914 10.37 12.4206C10.213 12.1508 10.3552 12.0027 10.4906 11.8683C10.612 11.747 10.7594 11.5525 10.8948 11.3944C11.0291 11.2362 11.0757 11.1235 11.1656 10.9437C11.2555 10.7639 11.2095 10.6051 11.1423 10.4697C11.0752 10.3343 10.5492 8.99903 10.3087 8.46387C10.1061 8.01428 9.89213 8.00384 9.6993 7.99626C9.54222 7.98976 9.36286 7.98991 9.18302 7.98991Z" fill="#7964FF"/>
+                </svg>
+                </a></div>
+            </div>
+
+            <div class="contacts__rekv">Реквизиты</div>
+            <div class="contacts__title">ООО “Галактика”</div>
+            <div class="contacts__text contacts__text_dark">129085, город Москва, ул. Большая Марьинская, дом 9, стр. 1, офис 112</div>
+            <div class="contacts__text">ИНН: 9717094961</div>
+            <div class="contacts__text">КПП: 771701001</div>
+
+            <div class="contacts__footer">
+              <div class="contacts__copy">© 2023, ООО “Галактика”. <span>Все права защищены</span> </div>
+              <div class="contacts__dev"><a href="//empis.ru" target="_blank"><img src="img/empis.svg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+
+       
+
+        <div class="contacts__map" id="YaMaps">
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="#top" class="gototop scrollTo" id="gototop">
+    <img src="img/gototop.svg" alt="">
+  </a>
+
+</main>
+<%= _.template(require('../includes/footer.html').default)(data) %>
