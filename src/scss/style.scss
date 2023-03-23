@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Jost';
-
+	background-color: $bgcolor;
 }
 
 
@@ -152,4 +152,264 @@ body {
 .togglesearch .headersearch__wrapper input {
 	background: $bgcolor;
 	color: #fff;
+}
+
+.sliderworks__content {
+	width: 520px;
+}
+
+
+.sliderarrows__right {
+	transform: rotate(180deg);
+}
+
+.sliderarrow {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid #323742;
+	margin-right: 8px;
+	transition: all 0.3s ease;
+
+	&:hover {
+		border-color: rgba(159, 22, 255, 1);
+	}
+
+	&:focus {
+		border-color: rgba(159, 22, 255, 1);
+		opacity: 0.5;
+	}
+
+	&:disabled {
+		border-color: #fff;
+		opacity: 0.5;
+	}
+}
+
+h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+	/* or 60px */
+
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 29px;
+	color: #FFFFFF;
+}
+
+.sliderworks__arrow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.sliderworks {
+	background: linear-gradient(180deg, #181B22 0%, rgba(24, 27, 34, 0) 100%);
+	mix-blend-mode: normal;
+}
+
+.sliderworks__block {}
+
+.sliderworks__aside {
+	background-image: url(../img/planet.svg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	min-width: 543px;
+	max-width: 543px;
+	min-height: 415px;
+	padding-top: 41px;
+}
+
+.works__title {
+	margin-bottom: 29px;
+}
+
+.sliderworks__link {
+	a {
+		font-family: 'Jost';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 100%;
+		/* identical to box height, or 18px */
+
+		text-transform: uppercase;
+
+		color: #BC5CFF;
+		display: flex;
+		align-items: center;
+
+		span {
+			padding-right: 10px;
+			display: block;
+		}
+	}
+}
+
+.block {
+	margin-bottom: 116px;
+}
+
+.bgborder {
+	background: linear-gradient(180deg, #181B22 0%, rgba(24, 27, 34, 0) 100%);
+	height: 225px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	mix-blend-mode: normal;
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.sliderworks__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 100%;
+	position: relative;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+	margin: 33px 30px;
+	padding-bottom: 18px;
+
+	&::after {
+		content: "";
+		width: 37px;
+		height: 3px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+
+		background: #9F16FF;
+	}
+}
+
+.sliderworks__arrow {}
+
+.sliderarrows {}
+
+.sliderarrow {}
+
+.sliderarrows__left {}
+
+.sliderarrows__right {}
+
+.sliderworks__container {}
+
+.sliderworks__slider {}
+
+.sliderworks__slide {}
+
+.sliderworks__content {
+	position: relative;
+}
+
+.sliderworks__content {}
+
+.sliderworks__image {
+	padding-left: 78px;
+	padding-bottom: 78px;
+}
+
+.sliderworks__mask {
+	background: linear-gradient(180deg, #181B22 0%, rgba(24, 27, 34, 0) 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
+}
+
+.sliderworks__imgblock {
+	width: 443px;
+	height: 292px;
+	position: relative;
+}
+
+.sliderworks__img {
+	width: 100%;
+	height: 100%;
+	background-size: 102%;
+	background-position: center;
+}
+
+.sliderworks__card {
+	background-color: rgba(38, 43, 54, 0.9);
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 275px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.sliderworks__title {}
+
+.sliderworks__footer {}
+
+.sliderworks__info {
+	padding: 33px 30px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 100%;
+
+
+	color: #FFFFFF;
+
+}
+
+.sliderworks__button {
+	.btn {
+		height: 58px;
+	}
+}
+
+.sliderworks__param {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 35.882px;
+	line-height: 100%;
+	/* identical to box height, or 36px */
+	height: 58px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+
+.sliderworks__params {
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	bottom: 0;
+
+	sup {
+		font-size: 20px;
+	}
+}
+
+.sliderworks__slider .slick-slide.nextnextslide {
+	transform: scale(0.55);
+	opacity: 0.3;
+	margin-left: -170px;
+}
+
+.sliderworks__slider .slick-slide.nextslide {
+	opacity: 0.6;
+	transform: scale(0.7);
+	margin-left: -39px;
+}
+
+.sliderworks__slider .slick-slide.currentslide {
+	transform: none;
+	opacity: 1;
+	margin-left: 0;
 }
