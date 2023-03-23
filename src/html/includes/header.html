@@ -1,76 +1,54 @@
-
 <div class="jsbackdrop "></div>
 <div id="top"></div>
 <header id="header" class="header">
-  <div class="header__topline">
-    <div class="container">
-      <div class="headercontainer" id='headercontainer'>
-        <div class="headertop">
-          <div class="headertop__left">
-            <div class="headertop__leftitems">
-              <div class="headercontact">
-                <div class="headercontact__phone">
-                  <a href="tel:8 (495) 120-60-14">8 (495) 120-60-14</a>
-                </div>
-                <div class="headercontact__email">
-                  <a href="mailto:info@ooogalaxy.ru">info@ooogalaxy.ru</a>
-                </div>
-              </div>
-            </div>
-            <!-- /.headertop__leftitems -->
-          </div>
-          <!-- /.headertop__left -->
-          <div class="headertop__center">
-            <div class="headertop__centeritems">
-              <div class="logo"><div class="logolink"><img src="img/logo.svg" alt=""></div></div>
-            </div>
-            <div class="headertop__menu onlyMobile">
-              <button class="menubtn">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </button>
-            </div>
-            <!-- /.headertop__leftitems -->
-          </div>
-          <!-- /.headertop__left -->
-          <div class="headertop__right">
-            <div class="headertop__rightitems">
-              <div class="headercallback">
-                <a href="#modal_callback" data-toggle="modal" class="btn btn_border">Оставить заявку</a>
-              </div>
-            </div>
-            <!-- /.headertop__rightitems -->
-          </div>
-          <!-- /.headertop__right -->
+  <div class="container">
+    <div class="headercontent flex items-center content-between w-full">
+      <div class="headercontent__left">
+        <div class="headerlogo flex items-center">
+          <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
+          <div class="iso"><img src="img/iso.svg" alt=""></div>
         </div>
-        <!-- /.headertop -->
       </div>
-      <!-- /.headercontainer -->
-     
+      <div class="headercontent__right">
+        <div class="headerpanel flex items-center">
+          <div class="headerpanel__menu">
+            <div class="mainmenu">
+              <div class="container">
+                <div class="mainmenu__wrapper">
+                  <div class="mainmenu__items">
+                    <div class="mainmenu__level_1">
+                      <ul class="mainmenuLevelOne flex items-center">
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="headerpanel__search togglesearch">
+            <a href="#" data-toggleclick="headersearch" class="active"><img src="img/Search.svg" alt=""></a>
+            <div class="headersearch" data-toggle="headersearch" data-togglewrapper="suggestions">
+              <form action="">
+                <div class="headersearch__wrapper">
+                  <input type="text" placeholder="Search" oninput="showSuggestions(this)">
+                  <a href="#" data-toggleclick="headersearch" class="headersearch__close active">
+                    <img src="img/closesearch.svg" alt="">
+                  </a>
+                  <button type="submit" class="headersearch__button">
+                    <img src="img/Search.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
   </div>
-        <div class="mainmenu">
-          <div class="container">
-          <div class="mainmenu__wrapper">
-            <div class="mainmenu__items">
-              <div class="mainmenu__level_1">
-                <ul class="mainmenuLevelOne">
-                  <li><a href="#block1" class="scrollTo">О нас</a></li>
-                  <li><a href="#block3" class="scrollTo">Оборудование</a></li>
-                  <li><a href="#block5" class="scrollTo">Сервис</a></li>
-                  <li><a href="#block7" class="scrollTo">IT-интеграция</a></li>
-                  <li><a href="#block10" class="scrollTo">Заказчикам</a></li>
-                  <li><a href="#block8" class="scrollTo">Партнерам</a></li>
-                  <li><a href="#block9" class="scrollTo">Контакты</a></li>
-                
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
 </header>
 <!-- /#header.header -->

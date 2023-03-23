@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>
+    MAIN
+  </title>
+  <!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
+ -->
+  <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/maskedinput.min.js"></script>
+  <script src="js/default.js"></script>
+  <script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+<div class="jsbackdrop "></div>
+<div id="top"></div>
+<header id="header" class="header">
+  <div class="container">
+    <div class="headercontent flex items-center content-between w-full">
+      <div class="headercontent__left">
+        <div class="headerlogo flex items-center">
+          <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
+          <div class="iso"><img src="img/iso.svg" alt=""></div>
+        </div>
+      </div>
+      <div class="headercontent__right">
+        <div class="headerpanel flex items-center">
+          <div class="headerpanel__menu">
+            <div class="mainmenu">
+              <div class="container">
+                <div class="mainmenu__wrapper">
+                  <div class="mainmenu__items">
+                    <div class="mainmenu__level_1">
+                      <ul class="mainmenuLevelOne flex items-center">
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="headerpanel__search togglesearch">
+            <a href="#" data-toggleclick="headersearch" class="active"><img src="img/Search.svg" alt=""></a>
+            <div class="headersearch" data-toggle="headersearch" data-togglewrapper="suggestions">
+              <form action="">
+                <div class="headersearch__wrapper">
+                  <input type="text" placeholder="Search" oninput="showSuggestions(this)">
+                  <a href="#" data-toggleclick="headersearch" class="headersearch__close active">
+                    <img src="img/closesearch.svg" alt="">
+                  </a>
+                  <button type="submit" class="headersearch__button">
+                    <img src="img/Search.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- /#header.header -->
+<style>
+  li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: inline-block;
+  }
+</style>
+<main>
+    <div class="container">
+     <ul>
+      <li><a href="index.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Главная</a></li>
+      <li><a href="catalog_root.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Корневая каталога</a></li>
+      <li><a href="catalog.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Каталог</a></li>
+      <li><a href="product.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Карточка товара</a></li>
+      <li><a href="product_off.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Карточка товара (нет в наличии)</a></li>
+      <li><a href="wishlist.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Избранное</a></li>
+      <li><a href="cart.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Корзина</a></li>
+      <li><a href="popup.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Окно доставки</a></li>    
+      <li><a href="news.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Новости</a></li>
+      <li><a href="news_detail.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Новости детальная</a></li>
+      <li><a href="recipe.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Рецепты</a></li>
+      <li><a href="recipe_detail.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Рецепты детальная</a></li>
+      <li><a href="about.html" target="_blank" rel="noopener noreferrer" class='btn_main'>О компании</a></li>
+      <li><a href="delivery.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Доставка</a></li>
+      <li><a href="politics.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Политика</a></li>
+      <li><a href="404.html" target="_blank" rel="noopener noreferrer" class='btn_main'>404</a></li>
+      <li><a href="order.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Оформление заказа</a></li>
+      
+     </ul>
+    </div><!-- /.container -->
+</main>
+
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_privacy'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Политика конфиденциальности</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>текст</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_text'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Компьютерная и печатная техника</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
+              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_product_1'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Компьютерная и печатная техника</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
+              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
+              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_product_2'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Ноутбуки</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="modaltext">
+            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
+              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
+              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='modal_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Оставьте заявку на&nbsp;бесплатную консультацию</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
+              </svg>
+              
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <input type="text" class='input-error' value='123'  placeholder='Ваше имя'>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <input type="tel" placeholder='Телефон'>
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <input type="text"  placeholder='Название компании'>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+
+              </div>
+              
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+
+              <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agreemodal" checked="checked" value="Y">
+                  <label for="agreemodal">Я согласен с <a href="#modal_privacy" data-toggle="modal">условиями обработки</a> моих персональных данных
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
+
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
