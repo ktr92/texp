@@ -147,3 +147,9 @@ body {
 
 	background-color: rgba(159, 22, 255, 1)
 }
+
+.togglesearch .headersearch,
+.togglesearch .headersearch__wrapper input {
+	background: $bgcolor;
+	color: #fff;
+}
