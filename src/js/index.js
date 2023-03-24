@@ -1,5 +1,20 @@
 function initFEcustom() {
+	worksSliderInit()
+	reviewsSliderInit()
+}
 
+
+function reviewsSliderInit() {
+	$('.reviewsblock__slider').slick({
+		dots: false,
+		infinite: true,
+		arrows: false,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+
+	});
+}
+function worksSliderInit() {
 
 	$('.sliderworks__slider').on('init', function (event, slick, currentSlide, nextSlide) {
 		console.log('init')
@@ -7,14 +22,14 @@ function initFEcustom() {
 		$(slick.$slides.get(1)).addClass('nextslide')
 		$(slick.$slides.get(2)).addClass('nextnextslide')
 	});
+
 	$('.sliderworks__slider').slick({
 		dots: false,
 		infinite: true,
-		arrows: true,
+		arrows: false,
 		slidesToShow: 1,
+		slidesToScroll: 1,
 		variableWidth: true,
-		nextArrow: $(this).closest('[data-sliderwrapper="sliderworks"]').find('[data-slidernext="sliderworks"]'),
-		prevArrow: $(this).closest('[data-sliderwrapper="sliderworks"]').find('[data-slidernext="sliderworks"]'),
 
 	});
 
@@ -46,8 +61,8 @@ function initFEcustom() {
 			NextNExtSlideDom = NextSlideDom.next();
 		} else {
 			CurrentSlideDom = $(slick.$slides.get(nextSlide));
-			NextSlideDom = CurrentSlideDom.prev()
-			NextNExtSlideDom = NextSlideDom.prev();
+			NextSlideDom = CurrentSlideDom.next()
+			NextNExtSlideDom = NextSlideDom.next();
 
 		}
 

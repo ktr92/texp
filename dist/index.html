@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/slick.min.css">
   <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/style.bundle.css" />
 
 
@@ -49,6 +50,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/maskedinput.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script src="js/default.js"></script>
   <script src="js/index.js"></script>
 
@@ -112,8 +114,9 @@
 <!-- /#header.header -->
       <main>
         <section class="maincontent relative" style="background-image: url(img/mainbg.jpg);">
-          <div class="mainbanner">
-            <div class="container">
+          <div class="container">
+
+            <div class="mainbanner">
               <div class="mainbanner__content">
                 <div class="mainbanner__items">
                   <div class="mainbanner__title">
@@ -169,7 +172,7 @@
                       работы</h2>
                   </div>
                   <div class="sliderworks__link">
-                    <a href="#">
+                    <a href="#" class="linkto">
                       <span>Смотреть все</span>
                       <img src="img/sliderworks__link.svg" alt="">
                     </a>
@@ -300,12 +303,229 @@
                         </div>
                       </div>
                     </div>
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card3.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">ПРОДЭКСПО</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" data-toggle="modal" class="btn ">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="block">
+          <div class="reviewsblock">
+            <div class="container">
+              <div class="reviewsblock__wrapper" data-sliderwrapper="sliderreviews">
+                <div class="headerblock flex content-between items-center">
+                  <div class="headerblock__left flex items-center">
+                    <div class="headerblock__title">
+                      <h2>Отзывы</h2>
+                    </div>
+                    <div class="headerblock__link">
+                      <a href="#" class="linkto">
+                        <span>Смотреть все</span>
+                        <img src="img/sliderworks__link.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="headerblock__panel">
+                    <div class="sliderarrows flex">
+                      <div class="sliderarrow sliderarrows__left" data-sliderprev="sliderreviews">
+                        <img src="img/sliderarrows__left.svg" alt="">
+                      </div>
+                      <div class="sliderarrow sliderarrows__right" data-slidernext="sliderreviews">
+                        <img src="img/sliderarrows__left.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviewsblock__main">
+                  <div class="reviewsblock__container">
+                    <div class="reviewsblock__slider">
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewsblock__slide">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="block">
+          <div class="aboutblock">
+            <div class="container">
+              <div class="colortitle">Tip Expo — это:</div>
+              <div class="aboutblock__header flex">
+                <div class="aboutnlock__content">
+                  <div class="aboutblock__title">
+                    <h2>Комплексные решения по проектированию и застройке выставочных стендов </h2>
+                  </div>
+                  <div class="aboutblock__text flex">
+                    <div class="aboutblock__text1">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                      предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.</div>
+                    <div class="aboutblock__text2">Мы знаем толк в дизайне и строительстве, тем самым создаем поистине
+                      уникальные проекты.</div>
+                  </div>
+                </div>
+                <div class="aboutblock__image">
+                  <div class="aboutblock__img"><img src="img/aboutblock__bg.png" alt=""></div>
+                </div>
+              </div>
+              <div class="aboutblock__main">
+                <div class="aboutblock__items flex content-between">
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">01</div>
+                          <div class="aboutcard__title">Собственное производство</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">02</div>
+                          <div class="aboutcard__title">Более 5 лет успешной работы</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">03</div>
+                          <div class="aboutcard__title">Полный спектр услуг высокого качества</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">04</div>
+                          <div class="aboutcard__title">Индивидуальный подход к каждому клиенту</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
         <section id="block2" class="partners">
           <div class="container">
