@@ -1,6 +1,7 @@
 function initFEcustom() {
 	worksSliderInit()
 	reviewsSliderInit()
+	partnersSliderInit()
 }
 
 
@@ -14,6 +15,18 @@ function reviewsSliderInit() {
 
 	});
 }
+
+function partnersSliderInit() {
+	$('.parntersblock__slider').slick({
+		dots: false,
+		infinite: true,
+		arrows: false,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+
+	});
+}
+
 function worksSliderInit() {
 
 	$('.sliderworks__slider').on('init', function (event, slick, currentSlide, nextSlide) {
