@@ -7,6 +7,9 @@
 body {
 	font-family: 'Jost';
 	background-color: $bgcolor;
+	background-image: url(../img/mainbg.svg);
+	background-position: bottom 700px center;
+	background-repeat: no-repeat;
 }
 
 
@@ -115,10 +118,74 @@ body {
 
 .mainbanner__button {}
 
-.btn {
-	display: flex;
+.btn_icontext {
+	display: inline-flex;
 	height: 76px;
 	align-items: center;
+	transition: .5s ease-out;
+	background: linear-gradient(to left, #9F16FF 50%, rgba(122, 19, 194, 1) 50%) right;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn_texticon {
+	display: inline-flex;
+	height: 58px;
+	align-items: center;
+	transition: .5s ease-out;
+	background: linear-gradient(to left, #9F16FF 50%, rgba(122, 19, 194, 1) 50%) right;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.btn::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 300px;
+	margin-left: 60px;
+	background: #fff;
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3ffffff', endColorstr='#b3ffffff', GradientType=0);
+	position: absolute;
+	left: -40px;
+	top: -150px;
+	z-index: 1;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-animation-name: slideme;
+	animation-name: slideme;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-delay: 0.05s;
+	animation-delay: 0.05s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	opacity: 0.4;
+}
+
+@-webkit-keyframes slideme {
+	0% {
+		left: -30px;
+		margin-left: 0px;
+	}
+
+	30% {
+		left: 110%;
+		margin-left: 80px;
+	}
+
+	100% {
+		left: 110%;
+		margin-left: 80px;
+	}
 }
 
 .btn__icon {
@@ -145,7 +212,54 @@ body {
 
 	color: #FFFFFF;
 
-	background-color: rgba(159, 22, 255, 1)
+
+	background: linear-gradient(to left, #9F16FF 50%, rgba(122, 19, 194, 1) 50%) right;
+	background-size: 200%;
+	transition: .5s ease-out;
+
+}
+
+.btn_texticon {
+	.btn__icon {
+		background: linear-gradient(to left, rgba(122, 19, 194, 1) 50%, #9F16FF 50%) right;
+		background-size: 200%;
+		transition: .5s ease-out;
+	}
+
+	.btn__text {
+		background: #9F16FF;
+	}
+}
+
+.btn_icontext:hover {
+	background-position: left;
+
+	.btn__text {
+		background-position: left;
+
+
+	}
+}
+
+.btn_texticon:hover {
+	background-position: left;
+
+	.btn__icon {
+		background-position: left;
+
+
+	}
+}
+
+.btn_icontext:focus {
+	background-position: left;
+	opacity: 0.5;
+
+	.btn__text {
+		background-position: left;
+
+
+	}
 }
 
 .togglesearch .headersearch,
@@ -154,9 +268,6 @@ body {
 	color: #fff;
 }
 
-.sliderworks__content {
-	width: 520px;
-}
 
 
 .sliderarrows__right {
@@ -290,6 +401,30 @@ h2 {
 	}
 }
 
+.sliderworks__content * {
+	transition: all 0.5s ease-out;
+}
+
+.sliderworks__content {
+	width: 520px;
+}
+
+.sliderworks__image:hover+.sliderworks__card {
+	z-index: -1;
+	opacity: 0.4;
+}
+
+.sliderworks__image:hover {
+	.sliderworks__img {
+		box-shadow: 0px 4px 60px rgba(24, 27, 34, 0.6);
+	}
+
+	.sliderworks__mask {
+		opacity: 0;
+	}
+}
+
+
 .sliderworks__arrow {}
 
 .sliderarrows {}
@@ -313,8 +448,8 @@ h2 {
 .sliderworks__content {}
 
 .sliderworks__image {
-	padding-left: 78px;
-	padding-bottom: 78px;
+	margin-left: 78px;
+	margin-bottom: 78px;
 }
 
 .sliderworks__mask {
@@ -366,11 +501,6 @@ h2 {
 
 }
 
-.sliderworks__button {
-	.btn {
-		height: 58px;
-	}
-}
 
 .sliderworks__param {
 	font-style: normal;
@@ -956,16 +1086,26 @@ a.linkto span {
 .footer__contact {}
 
 .cont_phone {
+	margin-bottom: 16px;
+
 	a {
 		margin-bottom: 16px;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 22px;
 		line-height: 100%;
 		/* identical to box height, or 22px */
 
 
 		color: #FFFFFF;
+
+		&:hover {
+			color: rgba(188, 92, 255, 1);
+		}
+
+		&:focus {
+			opacity: 0.5;
+		}
 	}
 
 }
@@ -973,7 +1113,7 @@ a.linkto span {
 .cont_time {
 
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 100%;
 
@@ -987,7 +1127,7 @@ a.linkto span {
 .cont_email {
 	a {
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 600;
 		font-size: 16px;
 		line-height: 100%;
 		/* identical to box height, or 16px */
@@ -996,6 +1136,24 @@ a.linkto span {
 		text-decoration-line: underline;
 
 		color: #BC5CFF;
+
+		&:hover {
+			color: rgba(188, 92, 255, 1);
+		}
+
+		&:focus {
+			opacity: 0.5;
+		}
+	}
+}
+
+.linkto {
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&:focus {
+		opacity: 0.7;
 	}
 }
 
@@ -1020,4 +1178,21 @@ a.linkto span {
 			background: #9F16FF;
 		}
 	}
+}
+
+.mainbanner__bg {
+	height: 100%;
+
+	width: 100%;
+
+}
+
+.block {
+	position: relative;
+}
+
+.figurebg {
+	position: absolute;
+	right: 87px;
+	bottom: 0;
 }

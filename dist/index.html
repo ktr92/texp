@@ -66,7 +66,7 @@
       <div class="headercontent__left">
         <div class="headerlogo flex items-center">
           <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
-          <div class="iso"><img src="img/iso.svg" alt=""></div>
+          <div class="iso"><a href="#" target="_blank"><img src="img/iso.svg" alt=""></a></div>
         </div>
       </div>
       <div class="headercontent__right">
@@ -113,7 +113,8 @@
 </header>
 <!-- /#header.header -->
       <main>
-        <section class="maincontent relative" style="background-image: url(img/mainbg.jpg);">
+        <!-- <section class="maincontent relative" style="background-image: url(img/mainbg.jpg);"> -->
+        <section class="maincontent relative">
           <div class="container">
 
             <div class="mainbanner">
@@ -125,24 +126,27 @@
                   <div class="mainbanner__text">
                     <div class="mainbanner__items flex">
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">580+</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="580">580</span>+
+                        </div>
                         <div class="mainbanner__itemtext">Реализованных
                           проектов</div>
                       </div>
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">20+</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="20">20</span>+
+                        </div>
                         <div class="mainbanner__itemtext">Опытных
                           сотрудников</div>
                       </div>
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">38</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="38">38</span>
+                        </div>
                         <div class="mainbanner__itemtext">Городов
                           реализации</div>
                       </div>
                     </div>
                   </div>
                   <div class="mainbanner__button">
-                    <a href="#modal_callback" data-toggle="modal" class="btn ">
+                    <a href="#modal_callback" data-toggle="modal" class="btn btn_icontext">
                       <span class="btn__icon"><img src="img/plus.svg" alt=""></span>
                       <span class="btn__text">Оставить заявку</span>
                     </a>
@@ -150,10 +154,19 @@
                 </div>
               </div>
             </div>
+            <div class="mainbanner__bg">
+              <div id="video-bg">
+                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay"
+                  muted="muted" loop="loop">
+                  <source src="img/video1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
             <!--  <div class="mainbanner__bg">
               <div id="video-bg">
-                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="img/intro.mp4" type="video/mp4">
+                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay"
+                  muted="muted" loop="loop">
+                  <source src="img/video2.mp4" type="video/mp4">
                 </video>
               </div>
             </div> -->
@@ -207,7 +220,7 @@
                           <div class="sliderworks__footer">
                             <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
                             <div class="sliderworks__button">
-                              <a href="#" data-toggle="modal" class="btn ">
+                              <a href="#" class="btn btn_texticon">
                                 <span class="btn__text">Подробнее</span>
                                 <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
                               </a>
@@ -235,7 +248,7 @@
                           <div class="sliderworks__footer">
                             <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
                             <div class="sliderworks__button">
-                              <a href="#" data-toggle="modal" class="btn ">
+                              <a href="#" class="btn btn_texticon">
                                 <span class="btn__text">Подробнее</span>
                                 <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
                               </a>
@@ -263,7 +276,7 @@
                           <div class="sliderworks__footer">
                             <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
                             <div class="sliderworks__button">
-                              <a href="#" data-toggle="modal" class="btn ">
+                              <a href="#" class="btn btn_texticon">
                                 <span class="btn__text">Подробнее</span>
                                 <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
                               </a>
@@ -291,7 +304,7 @@
                           <div class="sliderworks__footer">
                             <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
                             <div class="sliderworks__button">
-                              <a href="#" data-toggle="modal" class="btn ">
+                              <a href="#" class="btn btn_texticon">
                                 <span class="btn__text">Подробнее</span>
                                 <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
                               </a>
@@ -319,7 +332,7 @@
                           <div class="sliderworks__footer">
                             <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
                             <div class="sliderworks__button">
-                              <a href="#" data-toggle="modal" class="btn ">
+                              <a href="#" class="btn btn_texticon">
                                 <span class="btn__text">Подробнее</span>
                                 <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
                               </a>
@@ -653,9 +666,12 @@
                     <div class="promoblock__title">Мы предлагаем не только производство эксклюзивных выставочных стендов
                       любой сложности</div>
                     <div class="promoblock__text">
-                      <p>Благодаря высокой квалификации наших специалистов и наличию необходимого современного
-                        оборудования, процессы непосредственного изготовления и последующего монтажа экспозиции занимают
-                        минимально возможное время и отличаются безупречным качеством.</p>
+                      <p>но и различное мультимедийное оборудование, мебель, написание программного обеспечения,
+                        профессиональное создание аудиовизуального контента.</p>
+
+                      <p> На протяжении многих лет мы успешно реализуем проекты в экспо-секторе по всему миру на самом
+                        высоком уровне, используя инновационные технические разработки и тренды в выставочном бизнесе.
+                      </p>
 
 
                     </div>
@@ -663,6 +679,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="figurebg">
+            <img src="img/promobg.svg" alt="">
           </div>
         </section>
 

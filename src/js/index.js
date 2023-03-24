@@ -2,7 +2,26 @@ function initFEcustom() {
 	worksSliderInit()
 	reviewsSliderInit()
 	partnersSliderInit()
+	animationCounter1();
 }
+
+function animationCounter1() {
+	$('.js-appear-count').each(function () {
+		$(this).prop('Counter', 0).animate({
+			Counter: $(this).text()
+		}, {
+			duration: 2000,
+			easing: 'swing',
+			step: function (now) {
+				$(this).text(Math.ceil(now));
+			}
+		});
+	});
+
+
+}
+
+
 
 
 function reviewsSliderInit() {
