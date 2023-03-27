@@ -31,6 +31,32 @@ function reviewsSliderInit() {
 		arrows: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1484,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+
+				}
+			},
+		]
 
 	});
 }
@@ -42,6 +68,32 @@ function partnersSliderInit() {
 		arrows: false,
 		slidesToShow: 6,
 		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1484,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+
+				}
+			},
+		]
 
 	});
 }
