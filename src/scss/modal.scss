@@ -19,32 +19,45 @@
   text-align: left;
   vertical-align: middle;
 }
+
 .modal {
   z-index: 9999999999;
 }
+
 .modal-dialog {
-  width: 484px;
+  width: 811px;
   max-width: 100%;
   min-height: 574px;
+  background: #181B22;
+  border: 3px solid #3F4657;
+  filter: drop-shadow(0px 4px 250px #4F5A74);
 }
+
 .modal-body {
   padding: 20px;
   overflow-y: auto;
 }
+
 .modal-backdrop {
   background: rgba(37, 52, 79, 1);
 }
+
 .modal-backdrop.in {
-  opacity: 0.3;
+  background: linear-gradient(0deg, rgba(24, 27, 34, 0.8), rgba(24, 27, 34, 0.8)), rgba(24, 27, 34, 0.8);
+  opacity: 1;
 }
+
 .modal-content {
   box-shadow: none;
   border: none;
   height: 100%;
+  border-radius: 0;
 }
+
 .modalwrapper {
   height: 100%;
 }
+
 button.close {
   top: 15px;
   right: 15px;
@@ -67,11 +80,19 @@ button.close {
   margin-bottom: 34px;
 }
 
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
 .modal-content {
   border: none;
   box-shadow: none;
-  background: #ffffff;
-  padding: 44px 50px;
+  background-image: url(../img/mdbg.svg);
+  padding: 70px 80px 64px 80px;
+  background-color: #181B22;
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 
 label {
@@ -92,7 +113,7 @@ label {
   line-height: 100%;
   /* or 12px */
 
-  color: #ff585f;
+  color: #FF4040;
 }
 
 .modal-body {
@@ -110,16 +131,17 @@ button.close {
   background: none;
   border: none;
   height: initial;
-  padding: 0;
-  font-size: 10px;
   top: 21px;
+  font-size: 14px;
   right: 21px;
-  opacity: 0.3 !important;
+  opacity: 1 !important;
   transition: all 0.3s ease;
+
   &:hover {
     opacity: 1 !important;
   }
 }
+
 .map-delivery {
   height: 252px;
   width: 100%;
@@ -130,69 +152,9 @@ button.close {
 }
 
 .modal {
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="password"] {
-    font-family: "Circe";
-    display: block;
-    width: 100%;
-    align-items: center;
-    background: #f0f3f5;
-    border-radius: 6px;
-    display: flex;
-    height: 62px;
-    padding: 0 20px;
-    width: 100%;
-    border: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
-    /* identical to box height, or 18px */
 
-    color: #32445f;
-    border: 1.5px solid transparent;
-    /* identical to box height */
 
-    color: #3b435a;
 
-    &:focus {
-      border-color: $main;
-    }
-
-    &.input-error {
-      border: 1.5px solid #eb3437;
-      color: #eb3437;
-    }
-  }
-
-  textarea {
-    font-family: "Circe";
-    display: block;
-    width: 100%;
-    align-items: center;
-    background-color: #f3f3f7;
-    border-radius: 8px;
-    display: flex;
-    padding: 16px 20px;
-    width: 100%;
-    border: none;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    border: 1.5px solid #f3f3f7;
-    /* identical to box height */
-
-    color: #3b435a;
-
-    &.input-error {
-      border: 1.5px solid #ff585f;
-    }
-    
-  }
   .btn {
     padding: 0 30px;
     display: block;
@@ -200,18 +162,22 @@ button.close {
     line-height: 62px;
     width: 100%;
   }
+
   .check label {
     margin-top: 27px;
     color: #32445f;
     display: block;
-      a {
-        color: #32445f;
-        font-weight: bold;
-      }
+
+    a {
+      color: #32445f;
+      font-weight: bold;
+    }
   }
+
   .check label:before {
     background-color: $main;
   }
+
   .check input[type=checkbox]:checked+label:before {
     background-image: url('../img/checked_modal.svg');
     background-position: 50%;
@@ -220,8 +186,33 @@ button.close {
   }
 }
 
+.formblock__row {
+  display: flex;
+  width: 100%;
+
+  .formblock__input {
+    margin-left: 26px;
+    width: 50%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 .formblock__input {
-  margin-bottom: 17px;
+  margin-bottom: 26px;
+
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .modal-submit {
@@ -234,15 +225,14 @@ button.close {
   overflow-x: hidden;
 
   p {
-    font-family: 'Circe';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 140%;
-/* or 25px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
 
 
-color: rgba(50, 68, 95, 0.7);
+    color: rgba(50, 68, 95, 0.7);
   }
 }
 
@@ -254,83 +244,180 @@ color: rgba(50, 68, 95, 0.7);
   }
 }
 
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  /* identical to box height, or 32px */
+
+  text-transform: uppercase;
+  position: relative;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+  padding-bottom: 23px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 38px;
+    height: 4px;
+    background: #9F16FF;
+  }
+}
+
+.formblock__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+  opacity: 0.5;
+}
+
+.modal {
+  bottom: unset;
+}
+
 @media (max-width: 1023px) {
 
   .modal-content {
     padding: 34px 16px;
     border-radius: 0;
   }
+
   .modal-dialog {
-    margin: 18px auto;
-    width: calc(100% - 36px) !important;
+    margin: auto;
+    width: 100% !important;
+    max-width: 811px;
   }
+
   .modal_large .modal-dialog {
-    width: calc(100% - 36px) !important;
+    width: 100% !important;
   }
+
   button.close {
-    width: 10px;
-    height: 10px;
-    opacity: 0.7 !important;
-    right: 10px;
+
+    right: 5px;
     top: 10px;
   }
-  .modal-title {
-    margin-bottom: 18px;
-    font-size: 18px;
-    line-height: 100%;
-  }
- .modal {
 
 
-  input {
-    height: 48px;
-    padding: 0 18px;
-    font-style: 14px;
-  }
 
-  ::-webkit-input-placeholder { 
-    font-size: 14px;
-      }
-      ::-moz-placeholder { /* Firefox 19+ */
-        font-size: 14px;
-      }
-      :-ms-input-placeholder { /* IE 10+ */
-        font-size: 14px;
-      }
-      :-moz-placeholder { /* Firefox 18- */
-        font-size: 14px;
-      }
-    } 
+  .modal {
 
-    .modal .btn {
+
+    input {
       height: 48px;
-      line-height: 48px;
+      padding: 0 18px;
+      font-style: 14px;
+    }
+
+    ::-webkit-input-placeholder {
       font-size: 14px;
     }
-    .modal .check label {
-      font-size: 11px;
-      margin-top: 17px;
-    }
-    .modal {
-      .formblock__input {
-        margin-bottom: 8px;
-      }
-    }
-    .modal-submit {
-      margin-top: 20px;
-    }
-    .modal .check label a {
-      white-space: nowrap;
-    }
-    .modaltext p {
-      margin-top: 0;font-size: 12px;
-      line-height: 140%;
-    }
-    .modaltext {
-      max-height: initial;
-    }
-    .modal_large .modal-dialog {
-      min-height: initial;
-    }
-} 
 
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+      /* IE 10+ */
+      font-size: 14px;
+    }
+
+    :-moz-placeholder {
+      /* Firefox 18- */
+      font-size: 14px;
+    }
+  }
+
+  .modal .btn {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+  }
+
+  .modal .check label {
+    font-size: 11px;
+    margin-top: 17px;
+  }
+
+  .modal {
+    .formblock__input {
+      margin-bottom: 8px;
+    }
+  }
+
+  .modal-submit {
+    margin-top: 20px;
+  }
+
+  .modal .check label a {
+    white-space: nowrap;
+  }
+
+  .modaltext p {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .modaltext {
+    max-height: initial;
+  }
+
+  .modal_large .modal-dialog {
+    min-height: initial;
+  }
+
+  .modal-title {
+    font-size: 22px;
+    line-height: 100%;
+    padding-bottom: 21px;
+    margin-bottom: 26px;
+  }
+
+  .formblock__input label {
+    font-size: 12px;
+  }
+
+  .formblock__row {
+    flex-wrap: wrap;
+
+    .formblock__input {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 10px
+    }
+  }
+
+  .fileupload {
+    margin-top: 13px;
+
+    span {
+      font-size: 14px;
+    }
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .formblock__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    margin-bottom: 23px;
+  }
+}
