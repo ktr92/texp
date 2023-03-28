@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -59,141 +59,26 @@
 </head>
 
 <body>
-<div class="jsbackdrop "></div>
-<div id="top"></div>
-<header id="header" class="header">
-  <div class="container">
-    <div class="headercontent flex items-center content-between w-full">
-      <div class="headercontent__left">
-        <div class="headerlogo flex items-center">
-          <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
-          <div class="iso onlyDesktop"><a href="#" target="_blank"><img src="img/iso.svg" alt=""></a></div>
-        </div>
-      </div>
-      <div class="headercontent__right">
-        <div class="headerpanel flex items-center">
-          <div class="headerpanel__menu">
-            <div class="mainmenu" data-toggle="mainmenu">
-              <div class="container">
-                <div class="mainmenu__wrapper">
-                  <div class="mainmenu__items">
-                    <div class="mainmenu__level_1">
-                      <ul class="mainmenuLevelOne flex items-center">
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="headerpanel__search togglesearch">
-            <a href="#" data-toggleclick="headersearch" class=""><img src="img/Search.svg" alt=""></a>
-            <div class="headersearch" data-toggle="headersearch">
-              <form action="">
-                <div class="headersearch__wrapper">
-                  <input type="text" placeholder="Поиск">
-                  <a href="#" data-toggleclick="headersearch" class="headersearch__close ">
-                    <img src="img/closesearch.svg" alt="">
-                  </a>
-                  <button type="submit" class="headersearch__button">
-                    <img src="img/Search.svg" alt="">
-                  </button>
-                </div>
-              </form>
-            </div>
+    <style>
+      ul {
+        margin: 100px 0;
+      }
 
-          </div>
-          <a href="#" class="menubtn" data-toggleclick="mainmenu" id="menuToggle">
-            <span></span>
-            <span></span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+      li {
+        margin-bottom: 15px;
+        list-style: none;
+        display: inline-block;
+        display: block;
+        font-size: 30px;
+      }
+    </style>
+    <main>
+      <div class="container">
+        <ul>
+          <li><a href="index.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Главная</a></li>
+          <li><a href="index2.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Главная 2</a></li>
 
-</header>
-<!-- /#header.header -->
-<style>
-  li {
-    margin-bottom: 15px;
-    list-style: none;
-    display: inline-block;
-  }
-</style>
-<main>
-    <div class="container">
-     <ul>
-      <li><a href="index.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Главная</a></li>
-      <li><a href="catalog_root.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Корневая каталога</a></li>
-      <li><a href="catalog.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Каталог</a></li>
-      <li><a href="product.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Карточка товара</a></li>
-      <li><a href="product_off.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Карточка товара (нет в наличии)</a></li>
-      <li><a href="wishlist.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Избранное</a></li>
-      <li><a href="cart.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Корзина</a></li>
-      <li><a href="popup.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Окно доставки</a></li>    
-      <li><a href="news.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Новости</a></li>
-      <li><a href="news_detail.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Новости детальная</a></li>
-      <li><a href="recipe.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Рецепты</a></li>
-      <li><a href="recipe_detail.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Рецепты детальная</a></li>
-      <li><a href="about.html" target="_blank" rel="noopener noreferrer" class='btn_main'>О компании</a></li>
-      <li><a href="delivery.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Доставка</a></li>
-      <li><a href="politics.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Политика</a></li>
-      <li><a href="404.html" target="_blank" rel="noopener noreferrer" class='btn_main'>404</a></li>
-      <li><a href="order.html" target="_blank" rel="noopener noreferrer" class='btn_main'>Оформление заказа</a></li>
-      
-     </ul>
-    </div><!-- /.container -->
-</main>
 
-<footer id="footer" class="footer">
-  <div class="container">
-    <div class="footer__wrapper">
-      <div class="footer__items flex items-center content-between">
-        <div class="footer__left flex items-center">
-          <div class="footer__logo">
-            <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
-          </div>
-          <div class="footer__info">
-            <div class="footer__title">© ООО «Тип Экспо»</div>
-            <div class="footer__text">г. Москва, ул. Садовая-триумфальная, д.16, стр.3</div>
-            <div class="footer__items flex items-center">
-              <div class="footer__iso"><a href="#" target="_blank"><img src="img/iso2.png" alt=""></a></div>
-              <div class="footer__dev"><a href="//empis.ru" target="_blank">
-                  <span>Разработано в:</span>
-                  <img src="img/empis.svg" alt="">
-                </a></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__middle">
-          <div class="footer__contact">
-            <div class="cont_phone"><a href="tel:89913118369">8 (991) 311-83-69</a></div>
-            <div class="cont_time">с 09:00 до 18:00</div>
-            <div class="cont_email"><a href="mailto:info@tipexpo.ru">info@tipexpo.ru</a></div>
-          </div>
-        </div>
-        <div class="footer__right">
-          <div class="socials">
-            <div class="socials__items flex items-center">
-              <div class="socials__item">
-                <a href="#" target="_blank">
-                  <img src="img/Instagram.svg" alt="">
-                </a>
-              </div>
-              <div class="socials__item">
-                <a href="#" target="_blank">
-                  <img src="img/YouTube.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+        </ul>
+      </div><!-- /.container -->
+    </main>

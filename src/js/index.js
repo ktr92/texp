@@ -2,7 +2,19 @@ function initFEcustom() {
 	worksSliderInit()
 	reviewsSliderInit()
 	partnersSliderInit()
-	animationCounter1();
+	animationCounter1()
+	showCallback()
+}
+
+function showCallback() {
+	$(document).scroll(function () {
+		var y = $(this).scrollTop();
+		if (y > 500) {
+			$('.cbb').fadeIn();
+		} else {
+			$('.cbb').fadeOut();
+		}
+	});
 }
 
 function animationCounter1() {
