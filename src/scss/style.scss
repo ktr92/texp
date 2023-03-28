@@ -1251,7 +1251,7 @@ a.linkto span {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
-	animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+	animation: ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
 	z-index: 999;
 
 }
@@ -1506,6 +1506,10 @@ textarea {
 
 .cards {
 	margin-bottom: 87px;
+}
+
+.logo {
+	width: 106px;
 }
 
 .cardsitems__items {
