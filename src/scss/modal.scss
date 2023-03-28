@@ -61,10 +61,18 @@
 button.close {
   top: 15px;
   right: 15px;
-  opacity: 1 !important;
+  opacity: 0.3 !important;
   z-index: 999;
   position: absolute;
-  font-size: 35px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
 .modal-title {
@@ -127,20 +135,6 @@ label {
   margin-bottom: 24px;
 }
 
-button.close {
-  background: none;
-  border: none;
-  height: initial;
-  top: 21px;
-  font-size: 14px;
-  right: 21px;
-  opacity: 1 !important;
-  transition: all 0.3s ease;
-
-  &:hover {
-    opacity: 1 !important;
-  }
-}
 
 .map-delivery {
   height: 252px;
@@ -241,6 +235,20 @@ button.close {
     width: 1200px;
     max-width: 100%;
     min-height: 574px;
+  }
+}
+
+.fileupload {
+  label:hover {
+    span {
+      opacity: 0.5;
+    }
+  }
+
+  label:focus {
+    span {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -405,6 +413,8 @@ button.close {
   .fileupload {
     margin-top: 13px;
 
+
+
     span {
       font-size: 14px;
     }
@@ -412,6 +422,8 @@ button.close {
     img {
       width: 22px;
     }
+
+
   }
 
   .formblock__text {
@@ -420,4 +432,6 @@ button.close {
     line-height: 120%;
     margin-bottom: 23px;
   }
+
+
 }
