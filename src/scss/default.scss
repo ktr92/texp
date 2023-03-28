@@ -47,8 +47,15 @@ ul {
   @include clear;
 }
 
+
 @media (min-width: 1024px) {
   .onlyMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .onlyDesktop {
     display: none !important;
   }
 }
