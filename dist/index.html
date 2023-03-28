@@ -939,7 +939,7 @@
 <div class="cbb ">
   <div class="absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full cbwrapper animate-ping flex items-center ">
   </div>
-  <a href="modal_callback" data-toggle="modal"
+  <a href="#modal_callback" data-toggle="modal"
     class="flex items-center absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full  cb">
     <div class="cb__content">
       <img src="img/pen.svg" alt="">
@@ -949,4 +949,71 @@
     </div>
   </a>
 </div>
+
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='modal_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Форма обратной связи</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/close.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">ФИО</label>
+                  <input type="text" class='' value='Зубенко Михаил Петрович'>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Компания</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__row">
+                  <div class="formblock__input">
+                    <label for="">Email</label>
+                    <input type="email">
+
+                  </div><!-- /.formblock__input -->
+                  <div class="formblock__input">
+                    <label for="">Телефон</label>
+                    <input type="tel" value='+7 999 381 19 19'>
+
+                  </div><!-- /.formblock__input -->
+                </div>
+                <div class="formblock__input">
+                  <label for="">Комментарии</label>
+                  <textarea rows="1"></textarea>
+
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__row">
+                <div class="formblock__input">
+                  <div class="formblock__text">
+                    Даю свое согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности
+                  </div>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <button type='submit' class='btn btn_main btn_default'>Отправить</button>
+
+                </div><!-- /.formblock__input -->
+              </div>
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
