@@ -1,0 +1,131 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="maincontent relative">
+          <div class="innerpage">
+            <div class="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs__items">
+                  <ul>
+                    <li>
+                      <a href="/"><span>Tip Expo</span></a>
+                    </li>
+                    <li>
+                      <span>Портфолио</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagecontent">
+              <div class="container">
+                <div class="pageheader flex content-between items-center">
+                  <div class="pageheader__title">
+                    <h1>Отзывы</h1>
+                  </div>
+                </div>
+                <div class="pagemain">
+                  <div class="reviewslist">
+                    <div class="reviewslist__items">
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-lightbox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="paginationblock">
+                      <div class="pagination">
+                        <a href="#" class="pagination__arrLeft disabled">
+                          <img src="img/pagiRight.svg" alt="">
+                        </a>
+                        <ul>
+                          <li class="active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><span>...</span></li>
+                          <li><a href="">135</a></li>
+                        </ul>
+                        <a href="#" class="pagination__arrRight">
+                          <img src="img/pagiRight.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
