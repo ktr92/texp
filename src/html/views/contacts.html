@@ -1,0 +1,157 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="maincontent relative">
+          <div class="innerpage">
+            <div class="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs__items">
+                  <ul>
+                    <li>
+                      <a href="/"><span>Tip Expo</span></a>
+                    </li>
+                    <li>
+                      <span>Портфолио</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagecontent">
+              <div class="map">
+                <div class="map__yandex">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A5ccd257f83a355633fb360cc5bbc7c7f5bc9c31c3e4913feba04c02e22d0ccf0&amp;source=constructor"
+                    width="100%" height="552" frameborder="0"></iframe>
+                </div>
+                <div class="container">
+                  <div class="contactspage__block">
+                    <div class="contactspage__blockcontent">
+                      <div class="contactspage__header">
+                        <h1>Контакты</h1>
+                      </div>
+                      <div class="contactspage__footer">
+                        <div class="contactspage__tel">
+                          <a href="tel:89913118369">8 (991) 311-83-69</a>
+                        </div>
+                        <div class="contactspage__address">127006, г. Москва, ул. Садовая-триумфальная, д.16, стр.3
+                        </div>
+                        <div class="contactspage__info">
+                          <div class="contactspage__time">с 09:00 до 18:00</div>
+                          <div class="contactspage__email">
+                            <a href="mailto:info@tipexpo.ru">info@tipexpo.ru</a>
+
+                          </div>
+                        </div>
+                        <div class="contactspage__socials">
+                          <div class="socials">
+                            <div class="socials__items flex items-center">
+                              <div class="socials__item">
+                                <a href="#" target="_blank">
+                                  <img src="img/Instagram.svg" alt="">
+                                </a>
+                              </div>
+                              <div class="socials__item">
+                                <a href="#" target="_blank">
+                                  <img src="img/YouTube.svg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contactspage">
+                <div class="container">
+
+                </div>
+                <div class="contactspageform">
+                  <div class="container">
+                    <div class="contactspageform__row">
+
+                      <div class="contactsform">
+                        <div class="contactsform__title">
+                          Форма обратной связи
+                        </div>
+                        <div class="contactsform__form">
+                          <form action="">
+                            <div class="formblock">
+                              <div class="formblock__main">
+                                <div class="formblock__input">
+                                  <label for="">ФИО</label>
+                                  <input type="text" class="" value="Зубенко Михаил Петрович">
+
+                                </div><!-- /.formblock__input -->
+                                <div class="formblock__input">
+                                  <label for="">Компания</label>
+                                  <input type="text" class="input-error" value="123">
+                                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                                </div><!-- /.formblock__input -->
+                                <div class="formblock__row">
+                                  <div class="formblock__input">
+                                    <label for="">Email</label>
+                                    <input type="email">
+
+                                  </div><!-- /.formblock__input -->
+                                  <div class="formblock__input">
+                                    <label for="">Телефон</label>
+                                    <input type="tel" value="+7 999 381 19 19">
+
+                                  </div><!-- /.formblock__input -->
+                                </div>
+                                <div class="formblock__input">
+                                  <label for="">Комментарии</label>
+                                  <textarea rows="1"></textarea>
+
+                                </div><!-- /.formblock__input -->
+                                <div class="formblock__input">
+                                  <div class="fileupload">
+                                    <input type="file" id="actual-btn" hidden="">
+
+                                    <label for="actual-btn">
+                                      <img src="img/Attach.svg" alt=""><span>Прикрепить файл</span>
+                                    </label>
+                                  </div>
+
+
+                                  <span id="file-chosen"></span>
+                                </div><!-- /.formblock__input -->
+                              </div><!-- /.formblock__main -->
+                              <div class="formblock__row">
+                                <div class="formblock__input">
+                                  <div class="formblock__text">
+                                    Даю свое согласие на обработку персональных данных, соглашаюсь с политикой
+                                    конфиденциальности
+                                  </div>
+
+                                </div><!-- /.formblock__input -->
+                                <div class="formblock__input">
+                                  <button type="submit" class="btn btn_main btn_default">Отправить</button>
+
+                                </div><!-- /.formblock__input -->
+                              </div>
+
+                            </div><!-- /.formblock -->
+                          </form>
+                        </div>
+                      </div>
+                      <div class="contactimage">
+                        <div class="contactimage__img"><img src="img/contactbg.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
