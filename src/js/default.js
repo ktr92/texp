@@ -23,6 +23,21 @@ function closeByClickOutside(element, button, callback) {
 }
 
 $(document).ready(function () {
+  $("[data-sliderprev]").each(function () {
+    $(this).click(function () {
+      let sl = $(this).attr('data-sliderprev')
+      $(`[data-sliderwrapper="${sl}"] .slick-slider`).slick("slickPrev");
+    });
+  })
+
+  $("[data-slidernext]").each(function () {
+    $(this).click(function () {
+      let sl = $(this).attr('data-slidernext')
+      $(`[data-sliderwrapper="${sl}"] .slick-slider`).slick("slickNext");
+    })
+  });
+
+
   $('[data-toggleclick]').on('click', function (e) {
     $(this).toggleClass('active')
     e.preventDefault()

@@ -4,35 +4,46 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
   <title>
     MAIN
   </title>
   <!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
  -->
-  <link rel="preload" href="fonts/Montserrat-Black.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Light.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Thin.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-ExtraLight.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <!--   <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
 
 
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
   <link rel="stylesheet" href="css/style.bundle.css" />
 
 
@@ -40,6 +51,9 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
   <script src="js/default.js"></script>
   <script src="js/index.js"></script>
 
@@ -55,13 +69,13 @@
       <div class="headercontent__left">
         <div class="headerlogo flex items-center">
           <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
-          <div class="iso"><img src="img/iso.svg" alt=""></div>
+          <div class="iso onlyDesktop"><a href="#" target="_blank"><img src="img/iso.svg" alt=""></a></div>
         </div>
       </div>
       <div class="headercontent__right">
         <div class="headerpanel flex items-center">
           <div class="headerpanel__menu">
-            <div class="mainmenu">
+            <div class="mainmenu" data-toggle="mainmenu">
               <div class="container">
                 <div class="mainmenu__wrapper">
                   <div class="mainmenu__items">
@@ -93,7 +107,12 @@
                 </div>
               </form>
             </div>
+
           </div>
+          <a href="#" class="menubtn" data-toggleclick="mainmenu" id="menuToggle">
+            <span></span>
+            <span></span>
+          </a>
         </div>
       </div>
     </div>
@@ -102,9 +121,11 @@
 </header>
 <!-- /#header.header -->
       <main>
-        <div class="maincontent" style="background-image: url(img/mainbg.jpg);">
-          <div class="mainbanner">
-            <div class="container">
+        <!-- <section class="maincontent relative" style="background-image: url(img/mainbg.jpg);"> -->
+        <section class="maincontent relative">
+          <div class="container">
+
+            <div class="mainbanner">
               <div class="mainbanner__content">
                 <div class="mainbanner__items">
                   <div class="mainbanner__title">
@@ -113,24 +134,27 @@
                   <div class="mainbanner__text">
                     <div class="mainbanner__items flex">
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">580+</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="580">580</span>+
+                        </div>
                         <div class="mainbanner__itemtext">Реализованных
                           проектов</div>
                       </div>
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">20+</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="20">20</span>+
+                        </div>
                         <div class="mainbanner__itemtext">Опытных
                           сотрудников</div>
                       </div>
                       <div class="mainbanner__item">
-                        <div class="mainbanner__itemtitle">38</div>
+                        <div class="mainbanner__itemtitle"> <span class="js-appear-count" data-count="38">38</span>
+                        </div>
                         <div class="mainbanner__itemtext">Городов
                           реализации</div>
                       </div>
                     </div>
                   </div>
                   <div class="mainbanner__button">
-                    <a href="#modal_callback" data-toggle="modal" class="btn ">
+                    <a href="#modal_callback" data-toggle="modal" class="btn btn_icontext">
                       <span class="btn__icon"><img src="img/plus.svg" alt=""></span>
                       <span class="btn__text">Оставить заявку</span>
                     </a>
@@ -138,545 +162,328 @@
                 </div>
               </div>
             </div>
+            <div class="mainbanner__bg">
+              <div id="video-bg">
+                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay"
+                  muted="muted" loop="loop">
+                  <source src="img/video1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="bgborder"></div>
+
+            </div>
             <!--  <div class="mainbanner__bg">
               <div id="video-bg">
-                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
-                    <source src="img/intro.mp4" type="video/mp4">
+                <video class="video-bg_desktop" width="100%" height="auto" preload="auto" autoplay="autoplay"
+                  muted="muted" loop="loop">
+                  <source src="img/video2.mp4" type="video/mp4">
                 </video>
               </div>
             </div> -->
           </div>
-        </div>
+        </section>
 
-        <section id="block1" class="about">
-          <div class="container">
-            <div class="about__wrapper">
-              <div class="about__left">
-                <div class="about__title">
-                  <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s"> <span class="color">Динамично
-                      развивающийся </span> IT-интегратор - поставщик решений, оборудования и услуг в области IT. </h2>
+
+        <section class="block">
+          <div class="sliderworks" data-sliderwrapper="sliderworks">
+            <div class="container">
+              <div class="sliderworks__block flex ">
+                <div class="sliderworks__aside relative">
+                  <div class="works__title">
+                    <h2>Последние
+                      работы</h2>
+                  </div>
+                  <div class="sliderworks__leftheader">
+
+                    <div class="sliderworks__link">
+                      <a href="#" class="linkto">
+                        <span>Смотреть все</span>
+                        <img src="img/sliderworks__link.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="sliderworks__arrow">
+                      <div class="sliderarrows flex">
+                        <div class="sliderarrow sliderarrows__left" data-sliderprev="sliderworks">
+                          <img src="img/sliderarrows__left.svg" alt="">
+                        </div>
+                        <div class="sliderarrow sliderarrows__right" data-slidernext="sliderworks">
+                          <img src="img/sliderarrows__left.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="about__text">
-                  <p>Ключевые компетенции компании ООО “Галактика” находятся в сферах телекоммуникаций, печати и
-                    расходных материалов, мультимедиа, программного обеспечения для предприятий самых разных масштабов и
-                    отраслей.
-                  </p>
-                  <p>Благодаря большому опыту в реализации проектов разной сложности и объемов, предлагаемые и
-                    внедряемые нами решения целиком адаптированы под потребности бизнеса и государственного заказчика.
-                  </p>
-                  <p>Прекрасно ориентируясь на современной рынке и отслеживая развитие новых тенденций и технологий,
-                    наша компания осуществляет продвижение и внедрение передовых разработок и технологий от ведущих
-                    отечественных и мировых производителей, и тем самым, решает конкретные задачи - повышение
-                    эффективности, производительности, надежности и снижение затрат.</p>
-                </div>
-              </div>
-              <div class="about__right">
-                <div class="about__image">
-                  <div class="about__img"><img src="img/img1.png" alt=""></div>
+
+                <div class="sliderworks__container">
+                  <div class="sliderworks__slider">
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card1.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">ПРОДЭКСПО</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" class="btn btn_texticon">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card3.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">Moretto</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" class="btn btn_texticon">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card2.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">ПРОДЭКСПО</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" class="btn btn_texticon">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card3.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">ПРОДЭКСПО</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" class="btn btn_texticon">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sliderworks__slide">
+                      <div class="sliderworks__content">
+                        <div class="sliderworks__image">
+                          <div class="sliderworks__imgblock">
+                            <div class="sliderworks__mask"></div>
+                            <div class="sliderworks__img" style="background-image: url(img/card3.jpg);">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__card">
+
+                          <div class="sliderworks__title">ПРОДЭКСПО</div>
+                          <div class="sliderworks__footer">
+                            <div class="sliderworks__info">Москва, Россия, Ruplastica</div>
+                            <div class="sliderworks__button">
+                              <a href="#" class="btn btn_texticon">
+                                <span class="btn__text">Подробнее</span>
+                                <span class="btn__icon"><img src="img/Right.svg" alt=""></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sliderworks__params">
+                          <div class="sliderworks__param">62 м<sup>2</sup></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="block2" class="partners">
-          <div class="container">
-            <div class="partners__wrapper">
-              <div class="partners__title">
-                <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Наши клиенты</h2>
-              </div>
-              <div class="partners__items">
-                <div class="partners__item">
-                  <div class="partners__img"><img src="img/1.png" alt=""></div>
-                </div>
-                <div class="partners__item">
-                  <div class="partners__img"><img src="img/2.png" alt=""></div>
-                </div>
-                <div class="partners__item">
-                  <div class="partners__img"><img src="img/3.png" alt=""></div>
-                </div>
-                <div class="partners__item">
-                  <div class="partners__img"><img src="img/4.png" alt=""></div>
-                </div>
-                <div class="partners__item">
-                  <div class="partners__img"><img src="img/5.png" alt=""></div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="block3" class="products">
-          <div class="container">
-            <div class="products__wrapper">
-              <div class="products__title">
-                <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Оборудование</h2>
-              </div>
-              <div class="products__text">
-                <p>Поставка оборудования - это одно из направлений деятельности нашей
-                  компании. <br>
-                  Мы предлагаем и подбираем правильные и оптимальные решения для
-                  Вашего бизнеса благодаря широкому охвату отечественных и зарубежных
-                  брендов и предлагаемых решений, а также выполняем поставку в
-                  максимально короткие сроки.</p>
-
-                <p> Наша компания сотрудничает с ведущими зарубежными и российскими
-                  компаниями, поставщиками оборудования и программного обеспечения. Также наша компания помогает
-                  внедрять отечественные инновационные
-                  разработки и решения, выстраивать инфраструктуру, которая не зависит от
-                  колебаний рынка и политической составляющей.</p>
-              </div>
-
-              <div class="products__items">
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card1.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">Компьютеры</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
+        <section class="block">
+          <div class="reviewsblock">
+            <div class="container">
+              <div class="reviewsblock__wrapper" data-sliderwrapper="sliderreviews">
+                <div class="headerblock flex content-between items-center">
+                  <div class="headerblock__left flex items-center">
+                    <div class="headerblock__title">
+                      <h2>Отзывы</h2>
                     </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                    <div class="headerblock__link onlyDesktop">
+                      <a href="#" class="linkto">
+                        <span>Смотреть все</span>
+                        <img src="img/sliderworks__link.svg" alt="">
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card2.png" alt=""></div>
+                  <div class="headerblock__panel flex">
+                    <div class="headerblock__link onlyMobile">
+                      <a href="#" class="linkto">
+                        <span>Смотреть все</span>
+                        <img src="img/sliderworks__link.svg" alt="">
+                      </a>
+                    </div>
+                    <div class="sliderarrows flex">
+                      <div class="sliderarrow sliderarrows__left" data-sliderprev="sliderreviews">
+                        <img src="img/sliderarrows__left.svg" alt="">
                       </div>
-                      <div class="card__info">
-                        <div class="card__title">НОУТБУКИ</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
+                      <div class="sliderarrow sliderarrows__right" data-slidernext="sliderreviews">
+                        <img src="img/sliderarrows__left.svg" alt="">
                       </div>
                     </div>
-                    <a href="#modal_product_2" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card3.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">СЕРВЕРЫ</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
-                    </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card4.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">СХД</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
-                    </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card5.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">КОММУНИКАЦИИ</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
-                    </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card6.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">МУЛЬТИМЕДИА</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
-                    </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="products__item">
-                  <div class="card">
-                    <div class="card__wrapper">
-                      <div class="card__image">
-                        <div class="card__img"><img src="img/card7.png" alt=""></div>
-                      </div>
-                      <div class="card__info">
-                        <div class="card__title">ОРГТЕХНИКА</div>
-                        <div class="card__text">МФУ, принтеры, фотопринтеры, сканеры, 3Д – принтеры и сканеры, сканерам
-                          этикеток, фотолаборатории</div>
-                      </div>
-                    </div>
-                    <a href="#modal_product_1" data-toggle="modal" class="card__link">
-                      <div class="card__linkcontent">
-                        <div class="card__linktext">
-                          <div class="card__linkdots">
-                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M4.33115 12.3063C3.97976 12.3063 3.67421 12.1803 3.41449 11.9282C3.15476 11.6761 3.0249 11.3744 3.0249 11.023C3.0249 10.6411 3.15476 10.3241 3.41449 10.072C3.67421 9.81989 3.97976 9.69385 4.33115 9.69385C4.68254 9.69385 4.99574 9.81989 5.27074 10.072C5.54574 10.3241 5.68324 10.6258 5.68324 10.9772C5.68324 11.3591 5.54574 11.6761 5.27074 11.9282C4.99574 12.1803 4.68254 12.3063 4.33115 12.3063ZM11.0228 12.3063C10.6409 12.3063 10.3239 12.1803 10.0718 11.9282C9.81969 11.6761 9.69365 11.3744 9.69365 11.023C9.69365 10.6411 9.81969 10.3241 10.0718 10.072C10.3239 9.81989 10.6256 9.69385 10.977 9.69385C11.3589 9.69385 11.6759 9.81989 11.928 10.072C12.1801 10.3241 12.3062 10.6258 12.3062 10.9772C12.3062 11.3591 12.1801 11.6761 11.928 11.9282C11.6759 12.1803 11.3742 12.3063 11.0228 12.3063ZM17.6687 12.3063C17.2867 12.3063 16.9659 12.1803 16.7062 11.9282C16.4464 11.6761 16.3166 11.3744 16.3166 11.023C16.3166 10.6411 16.4502 10.3241 16.7176 10.072C16.985 9.81989 17.302 9.69385 17.6687 9.69385C18.0353 9.69385 18.3485 9.81989 18.6082 10.072C18.868 10.3241 18.9978 10.6258 18.9978 10.9772C18.9978 11.3591 18.868 11.6761 18.6082 11.9282C18.3485 12.1803 18.0353 12.3063 17.6687 12.3063Z"
-                                fill="#7964FF" />
-                            </svg>
-
-                          </div>
-                          <div class="card__linkcaption">Подробнее</div>
-                        </div>
-                        <div class="card__linkarrow">
-                          <div class="card__linkimg">
-                            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <g clip-path="url(#clip0_2_3019)">
-                                <path
-                                  d="M1.57325 1.48975C1.47558 1.58742 1.47558 1.74559 1.57325 1.84326L3.72992 3.99992L1.57325 6.15642C1.47558 6.25409 1.47558 6.41225 1.57325 6.50992L2.65658 7.59325C2.75425 7.69092 2.91242 7.69092 3.01008 7.59325L6.42675 4.17659C6.47575 4.12792 6.50008 4.06392 6.50008 3.99992C6.50008 3.93592 6.47575 3.87192 6.42692 3.82309L3.01025 0.406422C2.91258 0.308755 2.75442 0.308755 2.65675 0.406422L1.57325 1.48975Z"
-                                  fill="#7964FF" />
-                              </g>
-                              <defs>
-                                <clipPath id="clip0_2_3019">
-                                  <rect width="8" height="8" fill="white" transform="translate(0 8) rotate(-90)" />
-                                </clipPath>
-                              </defs>
-                            </svg>
-
-                          </div>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
 
+                <div class="reviewsblock__main">
+                  <div class="reviewsblock__container">
+                    <div class="reviewsblock__slider">
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
 
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="block4" class="pageform">
-          <div class="pageform__wrapper">
-
-            <div class="pageform__subwrapper">
-              <div class="container">
-
-                <div class="pageform__content">
-                  <div class="pageform__image">
-                    <div class="pageform__img"><img src="img/bg3.png" alt=""></div>
-                  </div>
-                  <div class="pageform__form">
-                    <form action="">
-                      <div class="pageform__title">Оставьте заявку на бесплатную консультацию</div>
-                      <div class="pageform__row">
-
-                        <div class="pageform__input"><input type="text" placeholder="Ваше имя"></div>
-                        <div class="pageform__input"><input class="input-error" value="123" type="tel"
-                            placeholder="Телефон"></div>
-                        <div class="pageform__input"><input type="text" placeholder="Название компании"></div>
-                        <div class="pageform__input pageform__input_btn"><button class="btn">Отправить</button></div>
-                      </div>
-                      <div class="pageform__check">
-                        <div class="check">
-                          <input type="checkbox" id="agree" checked="checked" value="Y">
-                          <label for="agree">Я согласен с&nbsp;<a href="#modal_privacy" data-toggle="modal"> условиями
-                              обработки </a>&nbsp;моих персональных данных
-                          </label>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
 
-          </div>
-        </section>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
 
-        <section id="block5" class="service">
-          <div class="container">
-            <div class="service__title">
-              <h2 class="wow" data-wow-duration="1s" data-wow-delay="0.5s">Сервис</h2>
-            </div>
-            <div class="service__items">
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard1.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка печатной техники</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard2.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка АРМ-ов, серверов и СХД </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard3.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка IP-телефонии</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard4.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка средств СКЗИ</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard5.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка систем видеоконференц связи</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="service__item">
-                <div class="servicecard">
-                  <div class="servicecard__wrapper">
-                    <div class="servicecard__image">
-                      <div class="servicecard__img"><img src="img/servicecard6.png" alt=""></div>
-                    </div>
-                    <div class="servicecard__title">
-                      <div class="servicecard__name">пуско-наладка мультимедиа: видео, аудио, свет</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div class="reviewsblock__slide">
+                            <div class="reviewitem">
+                              <div class="reviewitem__image">
+                                <a href="img/review.jpg" data-fancybox="reviews">
+                                  <img src="img/review.jpg" alt="">
+                                </a>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -686,225 +493,396 @@
         </section>
 
 
-        <section id="block7" class="itblock">
-          <div class="container">
-            <div class="itblock__wrapper">
-              <div class="itblock__left">
-                <div class="itblock__image">
-                  <div class="itblock__img onlyDesktop"><img src="img/img3.png" alt=""></div>
-                  <div class="itblock__img onlyMobile"><img src="img/img3_mb.png" alt=""></div>
+        <section class="block">
+          <div class="aboutblock">
+            <div class="container">
+              <div class="aboutblock__header flex">
+                <div class="aboutnlock__content">
+                  <div class="colortitle">Tip Expo — это:</div>
+
+                  <div class="aboutblock__title">
+                    <h2>Комплексные решения по проектированию и застройке выставочных стендов </h2>
+                  </div>
+                  <div class="aboutblock__text flex">
+                    <div class="aboutblock__text1">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                      предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.</div>
+                    <div class="aboutblock__text2">Мы знаем толк в дизайне и строительстве, тем самым создаем поистине
+                      уникальные проекты.</div>
+                  </div>
+                </div>
+                <div class="aboutblock__image">
+                  <div class="aboutblock__img"><img src="img/aboutblock__bg.png" alt=""></div>
                 </div>
               </div>
-              <div class="itblock__right">
-                <div class="itblock__content">
-                  <div class="itblock__badge">IT - интеграция</div>
-                  <div class="itblock__title">Что делать, если IT-отдел <br> <span class="throught">не
-                      справляется</span>
-                    с настройкой <br> разнородного софта и оборудования?</div>
-                  <div class="itblock__text">
-                    <p>
-                      Если сотрудники одного отдела с трудом понимают, чем занимается другой, из-за принципиально
-                      разного ПО? Если компьютерные сети разных отделов требуют дублирования большого числа узлов?</p>
+              <div class="aboutblock__main">
+                <div class="aboutblock__items flex content-between">
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
 
-                    <p>Есть способ, позволяющий быстро решить все эти проблемы. Интеграция систем поможет вам навести
-                      порядок в компьютерной инфраструктуре, привести рабочий процесс к общей основе и сократить
-                      нагрузку на IT-отделы, а также снизить расходы на обслуживание и обновление парка техники.
-                    </p>
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">01</div>
+                          <div class="aboutcard__title">Собственное производство</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="itblock__button"><a href="#modal_text" data-toggle="modal" class="btn">Читать
-                      подробнее</a></div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">02</div>
+                          <div class="aboutcard__title">Более 5 лет успешной работы</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">03</div>
+                          <div class="aboutcard__title">Полный спектр услуг высокого качества</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="aboutblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard__bg"></div>
+
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">04</div>
+                          <div class="aboutcard__title">Индивидуальный подход к каждому клиенту</div>
+                          <div class="aboutcard__text">Tip Expo — это команда профессионалов, работающая с 2008 года,
+                            предоставляющая полный комплекс услуг по проектированию и застройке выставочных стендов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="block10" class="accblock">
-          <div class="container">
-            <div class="accblock__wrapper">
-              <div class="accblock__figure">
-                <img src="img/bg7.svg" alt="">
-              </div>
-              <div class="accblock__left">
-                <div class="accnblockk__content">
-                  <div class="itblock__badge">Заказчикам</div>
-                  <div class="accblock__title">
-                    постоянное IT обеспечение вашей деятельности
-                  </div>
 
-                  <div class="accordion">
-                    <div class="accordion__item">
-                      <div class="accordion__title">
-                        <div class="accordion__arrow">
-                          <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
-                        </div>
-                        <span class="accordion__title-text">Задачи любого масштаба</span>
-                      </div>
-                      <div class="accordion__content">
-                        Мы собрали команду профессионалов, имеющих большой опыт совместной работы.
-                      </div>
+        <section class="block">
+          <div class="parntersblock">
+            <div class="container">
+              <div class="parntersblock__wrapper" data-sliderwrapper="sliderpartner">
+                <div class="headerblock flex content-between items-center">
+                  <div class="headerblock__left flex items-center">
+                    <div class="headerblock__title">
+                      <h2>Среди наших клиентов</h2>
                     </div>
-                    <div class="accordion__item">
-                      <div class="accordion__title">
-                        <div class="accordion__arrow">
-                          <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
-                        </div>
-                        <span class="accordion__title-text">Выстроенность процессов и слаженность действий</span>
+
+                  </div>
+                  <div class="headerblock__panel">
+                    <div class="sliderarrows flex">
+                      <div class="sliderarrow sliderarrows__left" data-sliderprev="sliderpartner">
+                        <img src="img/sliderarrows__left.svg" alt="">
                       </div>
-                      <div class="accordion__content">
-                        Здесь контент
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <div class="accordion__title">
-                        <div class="accordion__arrow">
-                          <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
-                        </div>
-                        <span class="accordion__title-text">Соблюдение сроков выполнения работ и оказания услуг</span>
-                      </div>
-                      <div class="accordion__content">
-                        Здесь контент
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <div class="accordion__title">
-                        <div class="accordion__arrow">
-                          <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
-                        </div>
-                        <span class="accordion__title-text">Обеспечение импортозамещения</span>
-                      </div>
-                      <div class="accordion__content">
-                        Здесь контент
-                      </div>
-                    </div>
-                    <div class="accordion__item">
-                      <div class="accordion__title">
-                        <div class="accordion__arrow">
-                          <span class="accordion__arrow-item "><img src="img/ChevronDown.svg" alt=""></span>
-                        </div>
-                        <span class="accordion__title-text">Сопровождение IT проектов</span>
-                      </div>
-                      <div class="accordion__content">
-                        Здесь контент
+                      <div class="sliderarrow sliderarrows__right" data-slidernext="sliderpartner">
+                        <img src="img/sliderarrows__left.svg" alt="">
                       </div>
                     </div>
                   </div>
-
                 </div>
-              </div>
-              <div class="accblock__right">
-                <div class="accblock__image">
-                  <div class="accblock__img"><img src="img/img4.png" alt=""></div>
+                <div class="parntersblock__container">
+                  <div class="parntersblock__slider">
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner1.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner2.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner3.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner4.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner5.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner2.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner2.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="parntersblock__slide">
+                      <div class="parntersblock__item">
+                        <div class="parntersblock__image">
+                          <div class="parntersblock__img"><img src="img/sliderpartner2.png" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="block8" class="imgblock">
-          <div class="container">
-            <div class="accblock__wrapper">
-              <div class="accblock__figure">
-                <img src="img/bg8.svg" alt="">
+        <section class="block">
+          <div class="promoblock">
+            <div class="container">
+              <div class="promoblock__header">
+                <h2>Изготовление <br> выставочных стендов</h2>
               </div>
-              <div class="accblock__left">
-                <div class="accblock__image">
-                  <div class="accblock__img"><img src="img/img5.png" alt=""></div>
-                </div>
+              <div class="promoblock__content">
+                <div class="promoblock__items flex content-between">
+                  <div class="promoblock__item">
+                    <div class="promoblock__title">Внешний вид выставочного стенда является определяющим фактором
+                      успешности экспозиции в целом</div>
+                    <div class="promoblock__text">
+                      <p>залогом формирования позитивного образа компании, предоставляемых услуг и продукта в глазах
+                        потенциального клиента.</p>
 
+                      <p>Разработка и визуализация проекта методами трехмерного моделирования помогает детально
+                        проработать все аспекты, учесть особенности фирменного стиля и пожелания заказчика, внести
+                        необходимые коррективы и при этом не выйти за рамки установленного бюджета.</p>
 
-              </div>
-              <div class="accblock__right">
-                <div class="accnblockk__content">
-                  <div class="itblock__badge">Партнерам</div>
-                  <div class="accblock__title">
-                    Наша компания стремится к долгосрочному развитию и оказанию помощи в упрощении ваших задач путем
-                    автоматизации закупок ИТ-оборудования
+                      <p>Важным моментом в разработке трехмерного дизайна стенда мы считаем обязательный учет любых
+                        особенностей его технического воплощения. С этой целью, мы привлекаем к художественному
+                        проектированию и строительству и инженерную группу, решая, таким образом, не только визуальные,
+                        но и технические вопросы.</p>
+                    </div>
                   </div>
+                  <div class="promoblock__item">
+                    <div class="promoblock__text">
+                      <p>но и различное мультимедийное оборудование, мебель, написание программного обеспечения,
+                        профессиональное создание аудиовизуального контента.</p>
 
-                  <div class="imgblock__text">
-                    <p>Мы будем рады предложить и выбрать именно то, что вам нужно для вас в соответствии с вашими
-                      потребностями.</p>
-
-                    <p>Индивидуальный подход и прозрачные условия труда - приоритетная составляющая нашего бизнеса. Мы
-                      работаем по контракту и всегда готовы предоставить необходимые документы для его заключения, чтобы
-                      вы могли быть уверены в нашей надежности.</p>
-
-                    <p> Благодаря правильной работе наших специалистов в отделе закупок и нашим прочным связям с
-                      крупными поставщиками мы готовы предложить вам лучшие цены на рынке ИТ-оборудования.</p>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="block9" class="contacts">
-          <div class="container">
-            <div class="contacts__wrapper">
+                      <p> На протяжении многих лет мы успешно реализуем проекты в экспо-секторе по всему миру на самом
+                        высоком уровне, используя инновационные технические разработки и тренды в выставочном бизнесе.
+                      </p>
 
 
+                    </div>
+                    <div class="promoblock__title">Мы предлагаем не только производство эксклюзивных выставочных стендов
+                      любой сложности</div>
+                    <div class="promoblock__text">
+                      <p>но и различное мультимедийное оборудование, мебель, написание программного обеспечения,
+                        профессиональное создание аудиовизуального контента.</p>
 
-              <div class="contacts__main">
-                <div class="contacts__icon">
-                  <img src="img/icon.svg" alt="" class="onlyDesktop">
-                  <img src="img/icon_mb.svg" alt="" class="onlyMobile">
-                </div>
+                      <p> На протяжении многих лет мы успешно реализуем проекты в экспо-секторе по всему миру на самом
+                        высоком уровне, используя инновационные технические разработки и тренды в выставочном бизнесе.
+                      </p>
 
-                <div class="contacts__content">
-                  <div class="contacts__phone"><a href="tel:+8 (495) 120-60-14">+8 (495) 120-60-14</a></div>
-                  <div class="contacts__text">129085, город Москва, ул. Большая Марьинская, дом 9, стр.1, офис 112</div>
-                  <div class="contacts__text">
-                    <a href="mailto:info@ooogalaxy.ru">info@ooogalaxy.ru</a>
-                  </div>
-                  <div class="contacts__socials">
-                    <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
-                          width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M24.7884 19.0674C23.815 17.3157 21.3077 15.2108 20.2725 14.2948C19.9892 14.044 19.9589 13.6101 20.2167 13.3328C22.1922 11.21 23.7722 8.77087 24.3161 7.297C24.556 6.64592 24.0593 5.958 23.3595 5.958H21.3266C20.6566 5.958 20.2644 6.1985 20.0775 6.58146C18.4357 9.94575 17.0274 11.4018 16.0416 12.2527C15.4896 12.7294 14.6289 12.3345 14.6289 11.6092C14.6289 10.2117 14.6289 8.40525 14.6289 7.12421C14.6289 6.50292 14.1208 6.00025 13.4941 6.00025L9.78045 5.958C9.313 5.958 9.04596 6.48721 9.32654 6.85825L9.9397 7.73846C10.1705 8.04342 10.295 8.41446 10.295 8.79525L10.2918 12.7592C10.2918 13.4487 9.456 13.7856 8.95983 13.3025C7.28121 11.6677 5.82466 8.32942 5.30033 6.73312C5.14866 6.27108 4.71587 5.95908 4.22512 5.958L2.22258 5.95312C1.47129 5.95312 0.922039 6.66542 1.12625 7.38258C2.956 13.8051 6.71029 19.9151 13.401 20.5776C14.0602 20.6426 14.6289 20.1117 14.6289 19.4547V17.3715C14.6289 16.774 15.0975 16.2605 15.6998 16.2453C15.7209 16.2448 15.742 16.2448 15.7632 16.2448C17.5328 16.2448 19.5147 18.8204 20.2081 20.0251C20.4074 20.3718 20.7801 20.583 21.1831 20.583H23.8768C24.6627 20.583 25.167 19.7494 24.7884 19.0674Z"
-                            fill="#7964FF" />
-                        </svg>
-                      </a></div>
-                    <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
-                          width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M20.3002 2.88257C19.9702 2.60273 19.4519 2.56269 18.916 2.77785H18.9151C18.3515 3.00401 2.96026 9.60577 2.3337 9.87549C2.21974 9.91509 1.22446 10.2865 1.32698 11.1137C1.4185 11.8595 2.21842 12.1683 2.3161 12.204L6.22902 13.5438C6.48862 14.4079 7.44562 17.5962 7.65726 18.2773C7.78926 18.7019 8.00442 19.2598 8.3815 19.3747C8.71238 19.5023 9.0415 19.3857 9.25446 19.2185L11.6467 16.9995L15.5086 20.0113L15.6006 20.0663C15.8628 20.1825 16.1141 20.2406 16.3539 20.2406C16.5391 20.2406 16.7169 20.2058 16.8867 20.1363C17.4653 19.8987 17.6967 19.3474 17.7209 19.2849L20.6056 4.29101C20.7816 3.49021 20.5369 3.08277 20.3002 2.88257ZM9.67994 14.0797L8.35994 17.5997L7.03994 13.1997L17.1599 5.71969L9.67994 14.0797Z"
-                            fill="#7964FF" />
-                        </svg>
-                      </a></div>
-                    <div class="contacts__socitem"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
-                          width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M13.0128 2.16699C7.04794 2.16699 2.19219 7.01856 2.19002 12.9834C2.18894 14.8901 2.68834 16.7514 3.63517 18.3916L2.16675 23.8337L7.83521 22.4943C9.41579 23.3566 11.1951 23.8093 13.0064 23.8104H13.0107C18.9744 23.8104 23.828 18.9577 23.8313 12.994C23.8335 10.1026 22.7091 7.38404 20.6659 5.3387C18.6228 3.29445 15.9074 2.16808 13.0128 2.16699ZM13.0107 4.33366C15.3247 4.33474 17.4993 5.23694 19.134 6.8706C20.7688 8.50644 21.6668 10.68 21.6646 12.9919C21.6625 17.7629 17.7817 21.6437 13.0085 21.6437C11.5645 21.6426 10.134 21.28 8.8741 20.5921L8.14412 20.1943L7.33797 20.3848L5.20516 20.8883L5.72567 18.9544L5.96053 18.0869L5.51196 17.3083C4.7558 15.9996 4.35561 14.5033 4.35669 12.9834C4.35886 8.21456 8.24074 4.33366 13.0107 4.33366ZM9.18302 7.98991C9.00211 7.98991 8.70959 8.05762 8.46151 8.32845C8.21342 8.5982 7.51359 9.25153 7.51359 10.5819C7.51359 11.9122 8.48267 13.1982 8.61808 13.3791C8.75242 13.5589 10.4886 16.3752 13.2371 17.4585C15.5207 18.3587 15.9845 18.1811 16.4807 18.1356C16.9769 18.0912 18.0814 17.4828 18.3067 16.8512C18.5321 16.2197 18.5326 15.6764 18.4654 15.5648C18.3982 15.4521 18.2179 15.3849 17.947 15.2495C17.6773 15.1141 16.3479 14.4613 16.0999 14.3714C15.8518 14.2815 15.6703 14.236 15.4905 14.5068C15.3106 14.7777 14.7938 15.3849 14.6357 15.5648C14.4775 15.7457 14.3204 15.77 14.0496 15.6346C13.7787 15.4981 12.9079 15.2118 11.8744 14.291C11.0706 13.5749 10.5282 12.6914 10.37 12.4206C10.213 12.1508 10.3552 12.0027 10.4906 11.8683C10.612 11.747 10.7594 11.5525 10.8948 11.3944C11.0291 11.2362 11.0757 11.1235 11.1656 10.9437C11.2555 10.7639 11.2095 10.6051 11.1423 10.4697C11.0752 10.3343 10.5492 8.99903 10.3087 8.46387C10.1061 8.01428 9.89213 8.00384 9.6993 7.99626C9.54222 7.98976 9.36286 7.98991 9.18302 7.98991Z"
-                            fill="#7964FF" />
-                        </svg>
-                      </a></div>
-                  </div>
 
-                  <div class="contacts__rekv">Реквизиты</div>
-                  <div class="contacts__title">ООО “Галактика”</div>
-                  <div class="contacts__text contacts__text_dark">129085, город Москва, ул. Большая Марьинская, дом 9,
-                    стр. 1, офис 112</div>
-                  <div class="contacts__text">ИНН: 9717094961</div>
-                  <div class="contacts__text">КПП: 771701001</div>
-
-                  <div class="contacts__footer">
-                    <div class="contacts__copy">© 2023, ООО “Галактика”. <span>Все права защищены</span> </div>
-                    <div class="contacts__dev"><a href="//empis.ru" target="_blank"><img src="img/empis.svg" alt=""></a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="figurebg">
+            <img src="img/promobg.svg" alt="">
+          </div>
+        </section>
 
+        <section class="block">
+          <div class="stagesblock">
+            <div class="container">
+              <div class="stagesblock__header">
+                <h2>Этапы реализации <br> проекта</h2>
+              </div>
+              <div class="stagesblock__content">
+                <div class="stagesblock__items flex content-between">
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">01</div>
+                          <div class="aboutcard__title">Заполнение бланка тз</div>
 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
 
-              <div class="contacts__map" id="YaMaps">
+                    </div>
+                    <div class="stagesblock__topline">
 
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">02</div>
+                          <div class="aboutcard__title">Обработка ТЗ</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">03</div>
+                          <div class="aboutcard__title">Разработка концепции</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">04</div>
+                          <div class="aboutcard__title">Просчет стоиомсти</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">05</div>
+                          <div class="aboutcard__title">Производство и&nbsp;монтаж</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">06</div>
+                          <div class="aboutcard__title">Поддержка
+                            во&nbsp;время мероприятия</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                  <div class="stagesblock__item">
+                    <div class="aboutblock__card">
+                      <div class="aboutcard">
+                        <div class="aboutcard__content">
+                          <div class="aboutcard__number">07</div>
+                          <div class="aboutcard__title">Демонтаж</div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="stagesblock__icon">
+                      <img src="img/stage.svg" alt="">
+                    </div>
+                    <div class="stagesblock__line">
+
+                    </div>
+                    <div class="stagesblock__topline">
+
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
 
 
         <a href="#top" class="gototop scrollTo" id="gototop">
@@ -912,117 +890,66 @@
         </a>
 
       </main>
-      <div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_privacy'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Политика конфиденциальности</div>
+      <footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__items flex items-center content-between">
+        <div class="footer__left flex items-center">
+          <div class="footer__logo">
+            <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">© ООО «Тип Экспо»</div>
+            <div class="footer__text">г. Москва, ул. Садовая-триумфальная, д.16, стр.3</div>
+            <div class="footer__items flex items-center">
+              <div class="footer__iso"><a href="#" target="_blank"><img src="img/iso2.png" alt=""></a></div>
+              <div class="footer__dev"><a href="//empis.ru" target="_blank">
+                  <span>Разработано в:</span>
+                  <img src="img/empis.svg" alt="">
+                </a></div>
+            </div>
+          </div>
         </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
-              </svg>
-              
-          </span>
-        </button>
-        <div class="modal-body">
-          <div class="modaltext">
-            <p>текст</p>
+        <div class="footer__middle">
+          <div class="footer__contact">
+            <div class="cont_phone"><a href="tel:89913118369">8 (991) 311-83-69</a></div>
+            <div class="cont_time">с 09:00 до 18:00</div>
+            <div class="cont_email"><a href="mailto:info@tipexpo.ru">info@tipexpo.ru</a></div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="socials">
+            <div class="socials__items flex items-center">
+              <div class="socials__item">
+                <a href="#" target="_blank">
+                  <img src="img/Instagram.svg" alt="">
+                </a>
+              </div>
+              <div class="socials__item">
+                <a href="#" target="_blank">
+                  <img src="img/YouTube.svg" alt="">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_text'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Компьютерная и печатная техника</div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
-              </svg>
-              
-          </span>
-        </button>
-        <div class="modal-body">
-          <div class="modaltext">
-            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
-              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
-              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
-              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
-              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
-              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
-              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_product_1'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Компьютерная и печатная техника</div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
-              </svg>
-              
-          </span>
-        </button>
-        <div class="modal-body">
-          <div class="modaltext">
-            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
-              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
-              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
-              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
-              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
-              <p>С другой стороны постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития. Разнообразный и богатый опыт реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет оценить значение существенных финансовых и административных условий.
-              <p>С другой стороны консультация с широким активом играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, ч</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</footer>
 
-<div class="modal modal_large fade" tabindex="-1" role="dialog" id='modal_product_2'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Ноутбуки</div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
-              </svg>
-              
-          </span>
-        </button>
-        <div class="modal-body">
-          <div class="modaltext">
-            <p>Таким образом сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации дальнейших направлений развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют от нас анализа модели развития. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
-              <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Разнообразный и богатый опыт укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений. Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия.
-              Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации форм развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения модели развития.</p>
-             
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="cbb ">
+  <div class="absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full cbwrapper animate-ping flex items-center ">
   </div>
+  <a href="#modal_callback" data-toggle="modal"
+    class="flex items-center absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full  cb">
+    <div class="cb__content">
+      <img src="img/pen.svg" alt="">
+      <span class="onlyDesktop">Оставить <br>
+        Заявку</span>
+      <span class="onlyMobile">Заявка</span>
+    </div>
+  </a>
 </div>
 
 
@@ -1032,14 +959,11 @@
     <div class="modalwrapper">
       <div class="modal-content">
         <div class="modal__header">
-          <div class="modal-title">Оставьте заявку на&nbsp;бесплатную консультацию</div>
+          <div class="modal-title">Форма обратной связи</div>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path  d="M10.1074 0.121577C9.94759 -0.0405256 9.68877 -0.0405256 9.52895 0.121577L5.99986 3.70111L2.47105 0.121577C2.31123 -0.0405256 2.05241 -0.0405256 1.89259 0.121577L0.119864 1.91964C-0.0399545 2.08174 -0.0399545 2.34426 0.119864 2.50636L3.56427 6L0.119864 9.49364C-0.0399545 9.65574 -0.0399545 9.91826 0.119864 10.0804L1.89259 11.8784C2.05241 12.0405 2.31123 12.0405 2.47105 11.8784L5.99986 8.29889L9.52895 11.8784C9.68877 12.0405 9.94759 12.0405 10.1074 11.8784L11.8801 10.0801C12.04 9.91798 12.04 9.65546 11.8801 9.49336L8.436 6L11.8801 2.50664C12.04 2.34454 12.04 2.08202 11.8801 1.91992L10.1074 0.121577Z" fill="#32445F"/>
-              </svg>
-              
+            <img src="img/close.svg" alt="">
           </span>
         </button>
         <div class="modal-body">
@@ -1047,38 +971,58 @@
             <div class="formblock">
               <div class="formblock__main">
                 <div class="formblock__input">
-                  <input type="text" class='input-error' value='123'  placeholder='Ваше имя'>
+                  <label for="">ФИО</label>
+                  <input type="text" class='' value='Зубенко Михаил Петрович'>
 
                 </div><!-- /.formblock__input -->
                 <div class="formblock__input">
-                  <input type="tel" placeholder='Телефон'>
+                  <label for="">Компания</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
                 </div><!-- /.formblock__input -->
+                <div class="formblock__row">
+                  <div class="formblock__input">
+                    <label for="">Email</label>
+                    <input type="email">
+
+                  </div><!-- /.formblock__input -->
+                  <div class="formblock__input">
+                    <label for="">Телефон</label>
+                    <input type="tel" value='+7 999 381 19 19'>
+
+                  </div><!-- /.formblock__input -->
+                </div>
                 <div class="formblock__input">
-                  <input type="text"  placeholder='Название компании'>
+                  <label for="">Комментарии</label>
+                  <textarea rows="1"></textarea>
 
                 </div><!-- /.formblock__input -->
                 <div class="formblock__input">
+                  <div class="fileupload">
+                    <input type="file" id="actual-btn" hidden />
 
-              </div>
-              
-              <div class="modal-submit modal-submit_small">
-                <div class="buttonsrow">
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <button type='submit' class='btn btn_main'>Отправить</button>
+                    <label for="actual-btn">
+                      <img src="img/Attach.svg" alt=""><span>Прикрепить файл</span>
+                    </label>
                   </div>
-                  <!-- /.buttonsrow__item -->
-                </div>
-                <!-- /.buttonsrow -->
+
+
+                  <span id="file-chosen"></span>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__row">
+                <div class="formblock__input">
+                  <div class="formblock__text">
+                    Даю свое согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности
+                  </div>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <button type='submit' class='btn btn_main btn_default'>Отправить</button>
+
+                </div><!-- /.formblock__input -->
               </div>
-
-              <div class="formblock__check">
-                <div class="check">
-                  <input type="checkbox" id="agreemodal" checked="checked" value="Y">
-                  <label for="agreemodal">Я согласен с <a href="#modal_privacy" data-toggle="modal">условиями обработки</a> моих персональных данных
-                  </label>
-                </div>
-              </div><!-- /.formblock__check -->
-
 
             </div><!-- /.formblock -->
           </form>

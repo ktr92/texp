@@ -1,0 +1,390 @@
+
+  <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <title>
+    MAIN
+  </title>
+  <!--   <link rel="shortcut icon" href="favicon/favicon.ico" />
+ -->
+  <link rel="preload" href="fonts/Jost-Black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Medium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-SemiBold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Thin.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Thin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-ExtraLight.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Jost-Italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Jost-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <!--   <link rel="preload" href="fonts/Circe-Regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/Circe-Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/slick.min.css">
+  <link rel="stylesheet" href="css/slick-theme.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/maskedinput.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/default.js"></script>
+  <script src="js/index.js"></script>
+
+
+</head>
+
+<body>
+    <div class="jsbackdrop "></div>
+<div id="top"></div>
+<header id="header" class="header">
+  <div class="container">
+    <div class="headercontent flex items-center content-between w-full">
+      <div class="headercontent__left">
+        <div class="headerlogo flex items-center">
+          <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
+          <div class="iso onlyDesktop"><a href="#" target="_blank"><img src="img/iso.svg" alt=""></a></div>
+        </div>
+      </div>
+      <div class="headercontent__right">
+        <div class="headerpanel flex items-center">
+          <div class="headerpanel__menu">
+            <div class="mainmenu" data-toggle="mainmenu">
+              <div class="container">
+                <div class="mainmenu__wrapper">
+                  <div class="mainmenu__items">
+                    <div class="mainmenu__level_1">
+                      <ul class="mainmenuLevelOne flex items-center">
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="headerpanel__search togglesearch">
+            <a href="#" data-toggleclick="headersearch" class=""><img src="img/Search.svg" alt=""></a>
+            <div class="headersearch" data-toggle="headersearch">
+              <form action="">
+                <div class="headersearch__wrapper">
+                  <input type="text" placeholder="Поиск">
+                  <a href="#" data-toggleclick="headersearch" class="headersearch__close ">
+                    <img src="img/closesearch.svg" alt="">
+                  </a>
+                  <button type="submit" class="headersearch__button">
+                    <img src="img/Search.svg" alt="">
+                  </button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <a href="#" class="menubtn" data-toggleclick="mainmenu" id="menuToggle">
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- /#header.header -->
+      <main>
+        <div class="maincontent relative">
+          <div class="innerpage">
+            <div class="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs__items">
+                  <ul>
+                    <li>
+                      <a href="/"><span>Tip Expo</span></a>
+                    </li>
+                    <li>
+                      <span>Портфолио</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagecontent">
+              <div class="container">
+                <div class="pageheader flex content-between items-center">
+                  <div class="pageheader__title">
+                    <h1>Отзывы</h1>
+                  </div>
+                </div>
+                <div class="pagemain">
+                  <div class="reviewslist">
+                    <div class="reviewslist__items">
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviewslist__item">
+                        <div class="reviewitem">
+                          <div class="reviewitem__image">
+                            <a href="img/review.jpg" data-fancybox="reviews">
+                              <img src="img/review.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="paginationblock">
+                      <div class="pagination">
+                        <a href="#" class="pagination__arrLeft disabled">
+                          <img src="img/pagiRight.svg" alt="">
+                        </a>
+                        <ul>
+                          <li class="active"><a href="">1</a></li>
+                          <li><a href="">2</a></li>
+                          <li><a href="">3</a></li>
+                          <li><span>...</span></li>
+                          <li><a href="">135</a></li>
+                        </ul>
+                        <a href="#" class="pagination__arrRight">
+                          <img src="img/pagiRight.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__items flex items-center content-between">
+        <div class="footer__left flex items-center">
+          <div class="footer__logo">
+            <div class="logo"><a href="/"><img src="img/logofull.svg" alt=""></a></div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">© ООО «Тип Экспо»</div>
+            <div class="footer__text">г. Москва, ул. Садовая-триумфальная, д.16, стр.3</div>
+            <div class="footer__items flex items-center">
+              <div class="footer__iso"><a href="#" target="_blank"><img src="img/iso2.png" alt=""></a></div>
+              <div class="footer__dev"><a href="//empis.ru" target="_blank">
+                  <span>Разработано в:</span>
+                  <img src="img/empis.svg" alt="">
+                </a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__contact">
+            <div class="cont_phone"><a href="tel:89913118369">8 (991) 311-83-69</a></div>
+            <div class="cont_time">с 09:00 до 18:00</div>
+            <div class="cont_email"><a href="mailto:info@tipexpo.ru">info@tipexpo.ru</a></div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="socials">
+            <div class="socials__items flex items-center">
+              <div class="socials__item">
+                <a href="#" target="_blank">
+                  <img src="img/Instagram.svg" alt="">
+                </a>
+              </div>
+              <div class="socials__item">
+                <a href="#" target="_blank">
+                  <img src="img/YouTube.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cbb ">
+  <div class="absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full cbwrapper animate-ping flex items-center ">
+  </div>
+  <a href="#modal_callback" data-toggle="modal"
+    class="flex items-center absolute top-0 right-0 -mr-1 -mt-1 w-14 h-14 rounded-full  cb">
+    <div class="cb__content">
+      <img src="img/pen.svg" alt="">
+      <span class="onlyDesktop">Оставить <br>
+        Заявку</span>
+      <span class="onlyMobile">Заявка</span>
+    </div>
+  </a>
+</div>
+
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='modal_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Форма обратной связи</div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/close.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">ФИО</label>
+                  <input type="text" class='' value='Зубенко Михаил Петрович'>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <label for="">Компания</label>
+                  <input type="text" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__row">
+                  <div class="formblock__input">
+                    <label for="">Email</label>
+                    <input type="email">
+
+                  </div><!-- /.formblock__input -->
+                  <div class="formblock__input">
+                    <label for="">Телефон</label>
+                    <input type="tel" value='+7 999 381 19 19'>
+
+                  </div><!-- /.formblock__input -->
+                </div>
+                <div class="formblock__input">
+                  <label for="">Комментарии</label>
+                  <textarea rows="1"></textarea>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <div class="fileupload">
+                    <input type="file" id="actual-btn" hidden />
+
+                    <label for="actual-btn">
+                      <img src="img/Attach.svg" alt=""><span>Прикрепить файл</span>
+                    </label>
+                  </div>
+
+
+                  <span id="file-chosen"></span>
+                </div><!-- /.formblock__input -->
+              </div><!-- /.formblock__main -->
+              <div class="formblock__row">
+                <div class="formblock__input">
+                  <div class="formblock__text">
+                    Даю свое согласие на обработку персональных данных, соглашаюсь с политикой конфиденциальности
+                  </div>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <button type='submit' class='btn btn_main btn_default'>Отправить</button>
+
+                </div><!-- /.formblock__input -->
+              </div>
+
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
