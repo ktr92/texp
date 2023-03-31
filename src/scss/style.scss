@@ -121,6 +121,8 @@ body {
 .btn_default {
 	background: #9F16FF;
 	height: 68px;
+	padding-left: 15px;
+	padding-right: 15px;
 	line-height: 68px;
 	border: none;
 	display: inline-block;
@@ -667,10 +669,16 @@ a.linkto span {
 	width: 237px;
 	height: 335px;
 	z-index: 1;
+	overflow: hidden;
 	position: relative;
 
 	img {
 		object-fit: cover;
+		transition: all 0.3s ease;
+	}
+
+	&:hover img {
+		transform: scale(1.2);
 	}
 }
 
@@ -2371,7 +2379,7 @@ $contactspage__block: calc(-100% + 52px);
 
 @media (max-width: 1023px) {
 	.contactspage__block {
-		transform: translateY(-50%);
+		transform: translateY(-80%);
 		height: 345px;
 	}
 
@@ -3279,6 +3287,73 @@ $contactspage__block: calc(-100% + 52px);
 		margin-bottom: 33px;
 	}
 
+	.contactspage__block {
+		padding: 22px 19px 22px 22px;
+		width: calc(100% - 36px);
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+
+	.contactspage__header h1 {
+		font-size: 22px;
+	}
+
+	.contactspage__tel a {
+		font-size: 20px;
+
+	}
+
+	.contactspage__address {
+		font-size: 12px;
+	}
+
+	.contactsform {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.map {
+		margin-top: 27px;
+	}
+
+	.map__yandex {
+		position: relative;
+	}
+
+	.map__yandex iframe {
+		height: 497px;
+	}
+
+	.map .container {
+		width: 100%;
+	}
+
+	.mapmask {
+		position: absolute;
+		background: linear-gradient(180deg, rgba(24, 27, 34, 0) 29.17%, rgba(24, 27, 34, 0.73) 100%), url(image.png);
+		height: 100%;
+		width: 100%;
+	}
+
+	.contactspage__info {
+		font-size: 12px;
+		line-height: 100%;
+	}
+
+	.contactspage__info {
+		margin: 16px 0;
+	}
+
+	.contactspageform {
+		margin-top: 122px;
+		margin-bottom: 30px;
+	}
+
+	.contactsform__title {
+		font-size: 22px;
+		margin-bottom: 24px;
+	}
 }
 
 @media (max-width: 580px) {

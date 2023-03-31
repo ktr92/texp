@@ -227,6 +227,8 @@ function worksSliderInit() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 
 	});
 

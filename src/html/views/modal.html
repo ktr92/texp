@@ -1,0 +1,32 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="maincontent relative">
+          <div class="innerpage">
+            <div class="breadcrumbs">
+              <div class="container">
+                <div class="breadcrumbs__items">
+                  <ul>
+                    <li>
+                      <a href="/"><span>Tip Expo</span></a>
+                    </li>
+                    <li>
+                      <span>Портфолио</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagecontent">
+              <div class="container">
+                <div class="pageheader flex content-between items-center">
+                  <a href="#modal_callback" class="btn_default" data-toggle="modal">Показать окно</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
